@@ -1,0 +1,62 @@
+.container {
+  background: rgb(106, 105, 104);
+  width: auto;
+  height: 100%;
+  margin-top: 20%;
+  margin-left:50%;
+  transform: translate(-50%,-50%);
+  position: relative;
+  display: block;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+}
+
+#prevent {
+  color : white;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.in {
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 30%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.in::placeholder{
+  color: white;
+  opacity: 0.5;
+}
+
+.in:focus
+{
+  width: 40%;
+  border-color: #2ecc71;
+}
+
+#badPass{
+  color: white;
+}
+
+
+.btn:hover {
+    background-color: rgb(189, 189, 189);
+    border: 1px solid rgb(80, 80, 80);
+}

@@ -1,0 +1,32 @@
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+
+.container {
+  min-height: 8vw;
+  width: 52vw;
+  // height: auto;
+  // border: 2px solid rgb(65, 65, 65);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: 0.6s all ease;
+}
+
+
+.container:hover {
+  background-color: rgb(96, 94, 94);
+  width: 55vw;
+
+}
+
+
+.txtContainer {
+  width: 50vw;
+  transform: translate(-50%,0);
+  margin-left: 50%;
+}
