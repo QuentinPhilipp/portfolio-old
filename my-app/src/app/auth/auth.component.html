@@ -1,9 +1,0 @@
-<div class="container">
-  <h2>Login</h2>
-  <input autofocus class="in" type="text" placeholder="Username"  [(ngModel)]="username" value="" id = "username">
-  <input class="in" type="password" placeholder="Password"  [(ngModel)]="password" value="" id = "password" (keyup.enter)="onSignIn()">
-  <p id="badPass" *ngIf="badPassword">Wrong password</p>
-  <button class="btn btn-outline-dark" (click)="onSignIn()" >Se connecter</button>
-
-  <p id="prevent">Must be authentified to continue</p>  
-</div>
