@@ -14,25 +14,44 @@ $(function() {
     });
 });
 
-function goTo() {
+function goToHome() {
   $('html, body').animate({
-    scrollTop: $("#pic1").offset().top -30
+    scrollTop: 0
+
 }, 1000);
 }
 
 function goToContact() {
   $('html, body').animate({
     scrollTop: $("#footer").offset().top
+
 }, 1500);
+  $('.navbar-collapse').collapse('hide');
 }
 
 function goToStudies() {
   $('html, body').animate({
-    scrollTop: $("#pic1").offset().top -30
+    scrollTop: $("#studies").offset().top-50
+
 }, 1500);
+$('.navbar-collapse').collapse('hide');
+}
+
+function goToSkills() {
+  $('html, body').animate({
+    scrollTop: $("#skills").offset().top-50
+
+}, 1500);
+$('.navbar-collapse').collapse('hide');
 }
 
 
 $('.carousel').carousel({
   interval: 2000
 })
+
+
+$('.navbar-nav>li>a').on('click', function(){
+  console.log("Test");
+    $('.navbar-collapse').collapse('hide');
+});

@@ -2,7 +2,9 @@ body,html {
     padding-top: 3vh; /*height of the navbar*/
     overflow-x: hidden;
 }
-
+h4 {
+  font-size: 20px;
+}
 .first-container
 {
   padding-top: 3vh;
@@ -25,6 +27,11 @@ body,html {
 .white {
   color : white;
 }
+
+.white-bg {
+  background-color: white;
+}
+
 .copyright-label {
   margin-bottom: 0;
   padding-bottom: 15px;
@@ -73,7 +80,7 @@ body,html {
   z-index: -1;
   transition: 0.5s;
   top:0;
-  border-radius: 0 0 50% 50%;
+  border-radius: 50% 50% 0 0;
 }
 
 .buttonScroll:hover::before {
@@ -113,4 +120,76 @@ max-width: 40vw;
 .spec-container {
   padding: 20px 20px 20px 20px;
   border-radius: 15px;
+}
+
+.round-ico {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(91, 91, 91);
+  padding: 80px 80px 80px 80px;
+  border-radius: 100px;
+  font-size: 40px;
+  color : white;
+  transition: 0.6s all ease;
+}
+
+.round-ico:hover {
+  background-color: rgb(223, 223, 223);
+  color : black;
+}
+
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.python {width: 80%; background-color: #581845;}
+.html {width: 70%; background-color: #900c3f;}
+.cpp {width: 70%; background-color: #c70039;}
+.angular {width: 60%; background-color: #ff5733;}
+.android {width: 50%; background-color: #ffc300;}
+
+
+
+.container-skills {
+  width: 80%;
+  transform: translate(-50%,0%);
+  margin-left: 50%;
+  margin-bottom: 20px;
+}
+
+.container-skill {
+  background: rgb(187, 187, 187);
+  border: 1px solid rgb(162, 162, 162);
+}
+
+.skill-name {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
+.other-skill {
+  padding: 30px 30px 30px 30px;
+  background-color: #ffc300;
+  border-radius: 40px;
+  font-size: 20px;
+  color : rgb(255, 255, 255);
+  transition: 0.3s all ease;
+  overflow: hidden;
+  /* max-width: 60vw; */
+}
+
+.other-skill:hover {
+  transform: scale(1.1);
 }

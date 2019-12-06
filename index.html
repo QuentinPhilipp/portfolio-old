@@ -24,18 +24,21 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Philipp Quentin</a>
+      <a class="navbar-brand" href="#" onclick="goToHome()">Philipp Quentin</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="goToContact()">Contact Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="goToStudies()">My studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="goToSkills()">My skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/QuentinPhilipp/">Github</a>
@@ -76,9 +79,9 @@
     </div>
   </div>
 
-  <div class="scrollDownDiv">
+  <!-- <div class="scrollDownDiv">
     <button onclick="goTo()" class="buttonScroll">Scroll Down</button>
-  </div>
+  </div> -->
 
   <section id="pic1">
     <div class="container">
@@ -133,8 +136,125 @@
       </div>
     </div>
   </section>
-</body>
 
+  <hr>
+
+  <section class="studies" id="studies">
+    <div class="col">
+
+      <div class="row">
+        <div class="col-md-12 col-lg-12 text-center">
+          <h2 class="display-4">Education</h2>
+          <h4>Short resume of my education</h4>
+        </div>
+      </div>
+
+      <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-6 col-lg-6">
+          <div class="text-center">
+            <div class="hi-icon-wrap hi-icon-effect">
+              <h4>ENIB Engineering School - Brest (FR)</h4>
+              <h5>2016 - 2021</h5>
+              <i class="fa fa-laptop round-ico"></i>
+              <p>General school but I specialized in IT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="text-center">
+            <div class="hi-icon-wrap hi-icon-effect">
+              <h4>High School Teyssier - Bitche (FR)</h4>
+              <h5>2013 - 2016</h5>
+              <i class="fa fa-book round-ico"></i>
+              <p>Bachelor's degree in 2016</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <hr>
+
+  <section id="skills">
+    <div class="col">
+
+    <div class="row">
+      <div class="col-md-12 col-lg-12 text-center">
+        <h2 class="display-4">Skills</h2>
+        <h4>My main skills as a developer</h4>
+      </div>
+    </div>
+
+    <div class="container-skills">
+
+      <p class="skill-name">Python</p>
+      <div class="container-skill">
+        <div class="skills python">80%</div>
+      </div>
+
+      <p class="skill-name">HTML / CSS / JS</p>
+      <div class="container-skill">
+        <div class="skills html">70%</div>
+      </div>
+
+      <p class="skill-name">C++</p>
+      <div class="container-skill">
+        <div class="skills cpp">70%</div>
+      </div>
+
+      <p class="skill-name">Angular Framework</p>
+      <div class="container-skill">
+        <div class="skills angular">60%</div>
+      </div>
+
+      <p class="skill-name">Android</p>
+      <div class="container-skill">
+        <div class="skills android">50%</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-lg-12  text-center">
+        <h4>My others skills</h4>
+      </div>
+    </div>
+
+    <div class="row d-flex my-4 align-items-center">
+      <div class="col-md-3 col-lg-2 text-center">
+        <p class="other-skill">Qt</p>
+      </div>
+      <div class="col-md-3 col-lg-2 text-center">
+        <p class="other-skill">SQL</p>
+      </div>
+      <div class="col-md-3 col-lg-2 text-center">
+        <p class="other-skill">C</p>
+      </div>
+      <div class="col-md-3 col-lg-2 text-center">
+        <p class="other-skill">Electronics</p>
+      </div>
+      <div class="col-md-6 col-lg-2 text-center">
+        <p class="other-skill">Embedded systems</p>
+      </div>
+      <div class="col-md-6 col-lg-2 text-center">
+        <p class="other-skill">English</p>
+      </div>
+    </div>
+
+
+  </section>
+
+  <hr>
+
+  <div class="scrollDownDiv">
+    <button onclick="goToHome()" class="buttonScroll">Go Top</button>
+  </div>
+
+</body>
 <!-- Footer -->
 <footer id="footer" class="page-footer font-small unique-color-dark">
   <div class="big-container">
@@ -146,7 +266,7 @@
 
           <!-- Grid column -->
           <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0 white">Get connected with me on social networks!</h6>
+            <h6 class="mb-0 white">Follow me on social networks!</h6>
           </div>
           <!-- Grid column -->
 
@@ -184,8 +304,8 @@
         <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
 
           <!-- Content -->
-          <h6 class="white text-uppercase font-weight-bold">Philipp Quentin</h6>
-          <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <h6 class="white text-uppercase font-weight-bold">Info</h6>
+          <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 40px;">
           <p class="white">I'm a student in engineering school. I'm currently looking for an internship for 4 to 5 month</p>
 
         </div>
@@ -195,7 +315,7 @@
         <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center mb-4">
 
           <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold white text-center mb-4">Download my CV</h6>
+          <h6 class="text-uppercase font-weight-bold white text-center mt-4 mb-4">Download my CV</h6>
           <!-- <div class="button-container "> -->
           <a href="img/QuentinPhilippResume.pdf" download="CV" class="download-button">Download</a>
           <!-- </div> -->
@@ -211,7 +331,7 @@
 
           <!-- Links -->
           <h6 class="text-uppercase white font-weight-bold">Contact</h6>
-          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 75px;">
           <p class="white">
             <i class=" fa fa-home mr-3"></i>Brest, 8 rue du rempart, France</p>
           <p class="white">
