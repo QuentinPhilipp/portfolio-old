@@ -1,92 +1,41 @@
 body,html {
     padding-top: 28px; /*height of the navbar*/
     overflow-x: hidden;
+    font-family:  'Roboto', sans-serif;
 }
 h4 {
   font-size: 20px;
 }
-.first-container
-{
-  padding-top: 3vh;
-  /* width: 70vw; */
-  max-width: 1000px;
-  height: auto;
-  position: relative;
-  /* background-color: rgb(241, 174, 25); */
-
-}
 
 
+/* Color */
 .dark {
   background: rgb(52, 58, 64);
 }
-.dark-t {
-  color :  rgb(52, 58, 64);
-}
-
 .white {
-  color : white;
-}
-
-.white-bg {
   background-color: white;
-}
-
-.copyright-label {
-  margin-bottom: 0;
-  padding-bottom: 15px;
-  font-size: 12px;
 }
 .light {
   background: rgb(91, 91, 91);
 }
-.light2 {
-    background: rgb(189, 154, 154);
+/* Typo Color */
+.dark-t {
+  color :  rgb(52, 58, 64);
 }
-.scrollDownDiv {
-  text-align: center;
-}
-
-.big-container {
-  background: rgb(52, 58, 64);
+.white-t {
+  color : white;
 }
 
 
-/* .button-container {
-  max-width: 40vw;
-} */
-
-.download-button {
-text-align: center;
-color :white;
-font-size : 14px;
-font-family: sans-serif;
-text-decoration: none;
-border: 1px solid white;
-padding: 14px 50px;
-overflow: hidden;
-transition: 0.5s all ease;
-max-width: 40vw;
-/* margin-left: 50%; */
-}
-
-.download-button:hover {
-  text-decoration: none;
-  color :black;
-  background-color: white
+/* Title of pictures */
+.pic-title {
+  top: 0;
+  font-size: 40px;
+  font-family:  'Roboto', sans-serif;
 }
 
 
-.nice-hover:hover {
-  background: rgb(91, 91, 91);
-  transition: 0.5s all ease;
-}
-
-.spec-container {
-  padding: 20px 20px 20px 20px;
-  border-radius: 15px;
-}
-
+/* Education Section */
 .round-ico {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -97,81 +46,21 @@ max-width: 40vw;
   color : white;
   transition: 0.6s all ease;
 }
-
 .round-ico:hover {
   background-color: rgb(223, 223, 223);
   color : black;
 }
 
 
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  color: white;
-}
 
-
-.python {width: 80%; background-color: #581845;}
-.html {width: 70%; background-color: #900c3f;}
-.cpp {width: 70%; background-color: #c70039;}
-.angular {width: 60%; background-color: #ff5733;}
-.android {width: 50%; background-color: #ffc300;}
-
-
-
-.container-skills {
-  width: 80%;
-  transform: translate(-50%,0%);
-  margin-left: 50%;
-  margin-bottom: 20px;
-}
-
-.container-skill {
-  background: rgb(187, 187, 187);
-  border: 1px solid rgb(162, 162, 162);
-  transition: 0.1s all ease;
-}
-
-
-.container-skill:hover {
-  transform: scale(1.01,1.05);
-  background: rgb(220, 220, 220);
-}
-
-.skill-name {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-.other-skill {
-  padding: 30px 30px 30px 30px;
-  /* background-color: #ffc300; */
-  background: linear-gradient(#900c3f,#c70039);
-  border-radius: 40px;
-  font-size: 20px;
-  color : rgb(255, 255, 255);
-  transition: 0.3s all ease;
-  overflow: hidden;
-  /* max-width: 60vw; */
-}
-
-.other-skill:hover {
-  transform: scale(1.02);
-}
-
-
-
-.scrollTopButton {
+/* Scroll Top Btn */
+.scroll-top-container {
   position: fixed;
   bottom: 5%;
   right : 1%;
   z-index: 5;
   display: none;
 }
-
-
 .button-scroll-top {
   background: rgb(138, 138, 138);
   color: white;
@@ -180,36 +69,33 @@ max-width: 40vw;
   border-radius: 10px;
   transition: 0.2s;
 }
-
-
 .button-scroll-top:hover {
   box-shadow:  0px 0px 5px black;
 }
 
 
+/* Project */
 .project-place {
   font-size: 16px;
 }
 
+
+/* Carousel */
 .text-zone {
   background: rgb(226, 226, 226);
   border: 2px solid rgb(91, 91, 91);
   border-radius: 20px;
   padding: 10px 0 0 0;
 }
-
-
-/* html {
-  box-sizing: border-box;
+.carousel-container
+{
+  padding-top: 3vh;
+  max-width: 1000px;
+  height: auto;
+  position: relative;
 }
-*,*::before,*::after {
-  box-sizing: inherit;
-}
 
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-} */
+/* Wave header */
 .wave-container {
   position: relative;
   /* background: #09F; */

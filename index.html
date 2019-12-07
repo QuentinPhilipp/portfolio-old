@@ -14,12 +14,16 @@
 <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 
 
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -56,7 +60,7 @@
   </div>
 
   <!-- Scroll Button -->
-  <div id="btnscroll" class="scrollTopButton">
+  <div id="btnscroll" class="scroll-top-container">
     <!-- <button onclick="goToHome()" class="buttonScrollTop">Scroll Top</button> -->
     <i class="fa fa-chevron-up button-scroll-top" onclick="goToHome()"></i>
   </div>
@@ -73,7 +77,7 @@
         </div>
         <div class="col-lg-6 order-lg-1 text-center">
           <div class="p-5">
-            <h2 class="display-4">Development</h2>
+            <h2 class="pic-title">Development</h2>
             <p>Programming has always been my specialty at school.
               I have worked on very different technologies, from Web
               languages to low-level programming in C for embedded systems
@@ -93,7 +97,7 @@
         </div>
         <div class="col-lg-6 text-center">
           <div class="p-5">
-            <h2 class="display-4">Embedded systems</h2>
+            <h2 class="pic-title">Embedded systems</h2>
             <p>During my training I used electronic boards to make embedded
               systems (Robot, Motor control system, Real-time OS). I have worked
               on STM32 Nucleo cards but also on more "mainstream" cards like
@@ -113,7 +117,7 @@
         </div>
         <div class="col-lg-6 order-lg-1 text-center">
           <div class="p-5">
-            <h2 class="display-4">ENIB Engineering School</h2>
+            <h2 class="pic-title">ENIB Engineering School</h2>
             <p>Training at ENIB is generalist with a specialization
               in the last two years. I have chosen Interactive Application
               Development. I learned Android programming and I was able to
@@ -247,7 +251,7 @@
         </div>
       </div>
 
-      <div class="first-container container-fluid py-4">
+      <div class="carousel-container container-fluid py-4">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -279,15 +283,7 @@
       </div>
 
       <div class="row justify-content-md-center">
-        <div class="col-md-6 col-lg-6 col-xl-3 text-center">
-          <div class="project-card">
-            <h2>Spoty</h2>
-            <p class="project-place">Ocean Hackathon 2019, Brest</p>
-            <p class="project-descriptor">We made a prototype of a web application for ranking and recommending
-               kitesurf and windsurf spots. I worked on obtaining data with different free APIs and datasets made
-               available by the companies for the event.</p>
-          </div>
-        </div>
+
         <div class="col-md-6 col-lg-6 col-xl-3 text-center">
           <div class="project-card">
             <h2>Biken Software</h2>
@@ -298,6 +294,17 @@
                point. All this works on OpenStreetMap data.</p>
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3 text-center">
+          <div class="project-card">
+            <h2>Spoty</h2>
+            <p class="project-place">Ocean Hackathon 2019, Brest</p>
+            <p class="project-descriptor">We made a prototype of a web application for ranking and recommending
+               kitesurf and windsurf spots. I worked on obtaining data with different free APIs and datasets made
+               available by the companies for the event.</p>
+          </div>
+        </div>
+
         <!-- <div class="col-md-6 col-lg-6 col-xl-3 text-center">
           <div class="project-card">
             <h2>Biken Software</h2>
@@ -327,7 +334,7 @@
 
             <!-- Grid column -->
             <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 class="mb-0 white">Follow me on social networks!</h6>
+              <h6 class="mb-0 white-t">Follow me on social networks!</h6>
             </div>
             <!-- Grid column -->
 
@@ -335,15 +342,15 @@
             <div class="col-md-6 col-lg-7 text-center text-md-right">
               <!--LinkedIn-->
               <a class="li-ic" href="https://www.linkedin.com/in/quentin-philipp/">
-                <i class="fa fa-linkedin white-text mr-4 white"> </i>
+                <i class="fa fa-linkedin white-t-text mr-4 white-t"> </i>
               </a>
               <!--Github-->
               <a class="git-ic" href="https://github.com/QuentinPhilipp/">
-                <i class="fa fa-github white-text mr-4 white"> </i>
+                <i class="fa fa-github white-t-text mr-4 white-t"> </i>
               </a>
               <!--Gitlab -->
               <a class="tw-ic" href="https://gitlab.com/QuentinPhilipp">
-                <i class="fa fa-gitlab white-text white"> </i>
+                <i class="fa fa-gitlab white-t-text white-t"> </i>
               </a>
 
             </div>
@@ -365,9 +372,9 @@
           <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
 
             <!-- Content -->
-            <h6 class="white text-uppercase font-weight-bold">Info</h6>
-            <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 40px;">
-            <p class="white">I'm a student in engineering school. I'm currently looking for an internship for 4 to 5 month</p>
+            <h6 class="white-t text-uppercase font-weight-bold">Info</h6>
+            <hr class="white-t accent-2 mb-4 mt-0 d-inline-block mx-auto white" style="width: 40px;">
+            <p class="white-t">I'm a student in engineering school. I'm currently looking for an internship for 4 to 5 month</p>
 
           </div>
 
@@ -376,7 +383,7 @@
           <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center mb-4">
 
             <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold white text-center mt-4 mb-4">Download my CV</h6>
+            <h6 class="text-uppercase font-weight-bold white-t text-center mt-4 mb-4">Download my CV</h6>
             <!-- <div class="button-container "> -->
             <a href="img/QuentinPhilippResume.pdf" download="CV" class="download-button">Download</a>
             <!-- </div> -->
@@ -391,13 +398,13 @@
           <div id="contact" class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
 
             <!-- Links -->
-            <h6 class="text-uppercase white font-weight-bold">Contact</h6>
-            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 75px;">
-            <p class="white">
+            <h6 class="text-uppercase white-t font-weight-bold">Contact</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto white" style="width: 75px;">
+            <p class="white-t">
               <i class=" fa fa-home mr-3"></i>Brest, 8 rue du rempart, France</p>
-            <p class="white">
+            <p class="white-t">
               <i class=" fa fa-envelope mr-3"></i>quentin.philipp@hotmail.fr</p>
-            <p class="white">
+            <p class="white-t">
               <i class=" fa fa-phone mr-3"></i>(+33) 07 89 84 15 87</p>
 
           </div>
@@ -409,7 +416,7 @@
       </div>
       <!-- Footer Links -->
 
-      <p class="text-center white copyright-label">© 2019 Copyright : Quentin Philipp</p>
+      <p class="text-center white-t copyright-label">© 2019 Copyright : Quentin Philipp</p>
 
     </div>
   </footer>

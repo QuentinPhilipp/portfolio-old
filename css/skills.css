@@ -1,0 +1,55 @@
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+
+.python {width: 80%; background-color: #581845;}
+.html {width: 70%; background-color: #900c3f;}
+.cpp {width: 70%; background-color: #c70039;}
+.angular {width: 60%; background-color: #ff5733;}
+.android {width: 50%; background-color: #ffc300;}
+
+
+
+.container-skills {
+  width: 80%;
+  transform: translate(-50%,0%);
+  margin-left: 50%;
+  margin-bottom: 20px;
+}
+
+
+.container-skill {
+  background: rgb(187, 187, 187);
+  border: 1px solid rgb(162, 162, 162);
+  transition: 0.1s all ease;
+}
+.container-skill:hover {
+  transform: scale(1.01,1.05);
+  background: rgb(220, 220, 220);
+}
+
+.skill-name {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.other-skill {
+  padding: 30px 30px 30px 30px;
+  /* background-color: #ffc300; */
+  background: linear-gradient(#900c3f,#c70039);
+  border-radius: 40px;
+  font-size: 20px;
+  color : rgb(255, 255, 255);
+  transition: 0.3s all ease;
+  overflow: hidden;
+  /* max-width: 60vw; */
+}
+
+.other-skill:hover {
+  transform: scale(1.02);
+}
