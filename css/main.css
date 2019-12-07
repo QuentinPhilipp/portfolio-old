@@ -52,41 +52,6 @@ h4 {
 }
 
 
-.buttonScroll {
-  border: 1px solid rgb(52, 58, 64);
-  background: none;
-  padding: 10px 20px;
-  font-size:20px;
-  margin : 10px;
-  color: rgb(52, 58, 64);
-  transition:0.8s;
-  position: relative;
-  overflow:hidden;
-}
-
-.buttonScroll:hover
-{
-  color: rgb(255, 255, 255);
-}
-
-
-.buttonScroll::before{
-  content: "";
-  position: absolute;
-  left:0;
-  width: 100%;
-  height: 0%;
-  background: rgb(52, 58, 64);
-  z-index: -1;
-  transition: 0.5s;
-  top:0;
-  border-radius: 50% 50% 0 0;
-}
-
-.buttonScroll:hover::before {
-  height: 180%;
-}
-
 /* .button-container {
   max-width: 40vw;
 } */
@@ -143,6 +108,7 @@ max-width: 40vw;
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 10px;
   color: white;
 }
 
@@ -171,14 +137,6 @@ max-width: 40vw;
   margin-top: 10px;
 }
 
-hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  width: 70%;
-}
-
 .other-skill {
   padding: 30px 30px 30px 30px;
   background-color: #ffc300;
@@ -192,4 +150,62 @@ hr {
 
 .other-skill:hover {
   transform: scale(1.1);
+}
+
+
+
+.scrollTopButton {
+  position: fixed;
+  bottom: 5%;
+  right : 5%;
+  z-index: 5;
+  display: none;
+}
+
+
+.button-scroll-top {
+  background: rgb(138, 138, 138);
+  color: white;
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+
+.button-scroll-top:hover {
+  box-shadow:  0px 0px 5px black;
+}
+
+
+.project-place {
+  font-size: 16px;
+}
+
+.text-zone {
+  background: rgb(226, 226, 226);
+  border: 2px solid rgb(91, 91, 91);
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+}
+
+
+/* html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+} */
+.wave-container {
+  position: relative;
+  /* background: #09F; */
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+  top: 0;
 }

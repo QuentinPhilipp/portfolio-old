@@ -1,19 +1,3 @@
-$(function() {
-    $("#smoothScroll").click(function() {
-        if (
-
-            location.hostname == this.hostname
-            && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-        ) {
-            var anchor = $(this.hash);
-            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-            if ( anchor.length ) {
-                $("html, body").animate( { scrollTop: anchor.offset().top }, 1000);
-            }
-        }
-    });
-});
-
 function goToHome() {
   $('html, body').animate({
     scrollTop: 0
@@ -45,6 +29,14 @@ function goToSkills() {
 $('.navbar-collapse').collapse('hide');
 }
 
+function goToProjects() {
+  $('html, body').animate({
+    scrollTop: $("#projects").offset().top-50
+
+}, 1500);
+$('.navbar-collapse').collapse('hide');
+}
+
 
 $('.carousel').carousel({
   interval: 2000
@@ -55,3 +47,23 @@ $('.navbar-nav>li>a').on('click', function(){
   console.log("Test");
     $('.navbar-collapse').collapse('hide');
 });
+
+
+var mybutton = document.getElementById("btnscroll");
+
+$(window).scroll(testScroll);
+
+window.onload = testScroll()
+
+function testScroll() {
+  var tempScrollTop = $(window).scrollTop();
+  console.log("Scroll from Top: " + tempScrollTop.toString());
+  if(tempScrollTop>500)
+  {
+    mybutton.style.display= 'block' ;
+  }
+  else
+  {
+    mybutton.style.display= 'none' ;
+  }
+};

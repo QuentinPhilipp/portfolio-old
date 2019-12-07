@@ -15,7 +15,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
-  <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 
@@ -32,58 +31,39 @@
       <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="goToContact()">Contact Me</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#" onclick="goToStudies()">My studies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="goToSkills()">My skills</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#" onclick="goToProjects()">My projects</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://github.com/QuentinPhilipp/">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="goToContact()">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="first-container container-fluid">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-
-          <img class="d-block w-100" src="img/biken.png" alt="Biken Preview">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="dark-t">Biken Software</h5>
-            <p class="dark-t">School project of pathfinding on OpenStreetMap data</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/webDev2.jpg" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Web Development</h5>
-            <p>Learning web development</p>
-          </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      </div>
-    </div>
+  <!-- Wave -->
+  <div class="wave-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#343a40" fill-opacity="1" d="M0,192L17.1,176C34.3,160,69,128,103,149.3C137.1,171,171,245,206,261.3C240,277,274,235,309,181.3C342.9,128,377,64,411,37.3C445.7,11,480,21,514,69.3C548.6,117,583,203,617,240C651.4,277,686,267,720,229.3C754.3,192,789,128,823,96C857.1,64,891,64,926,101.3C960,139,994,213,1029,208C1062.9,203,1097,117,1131,96C1165.7,75,1200,117,1234,149.3C1268.6,181,1303,203,1337,197.3C1371.4,192,1406,160,1423,144L1440,128L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path></svg>
   </div>
 
-  <!-- <div class="scrollDownDiv">
-    <button onclick="goTo()" class="buttonScroll">Scroll Down</button>
-  </div> -->
+  <!-- Scroll Button -->
+  <div id="btnscroll" class="scrollTopButton">
+    <!-- <button onclick="goToHome()" class="buttonScrollTop">Scroll Top</button> -->
+    <i class="fa fa-chevron-up button-scroll-top" onclick="goToHome()"></i>
+  </div>
 
-  <section id="pic1">
+
+  <!-- Three Pic -->
+  <section>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
@@ -94,13 +74,15 @@
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <h2 class="display-4">Development</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <p>Programming has always been my specialty at school.
+              I have worked on very different technologies, from Web
+              languages to low-level programming in C for embedded systems
+              and software development. I have knowledge of using Github/Gitlab.  </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section>
     <div class="container">
       <div class="row align-items-center">
@@ -112,13 +94,15 @@
         <div class="col-lg-6">
           <div class="p-5">
             <h2 class="display-4">Embedded systems</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <p>During my training I used electronic boards to make embedded
+              systems (Robot, Motor control system, Real-time OS). I have worked
+              on STM32 Nucleo cards but also on more "mainstream" cards like
+              Arduinos or Rapsberry Py</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section>
     <div class="container">
       <div class="row align-items-center">
@@ -130,7 +114,10 @@
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <h2 class="display-4">ENIB Engineering School</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <p>Training at ENIB is generalist with a specialization
+              in the last two years. I have chosen Interactive Application
+              Development. I learned Android programming and I was able to
+              improve my web development skills</p>
           </div>
         </div>
       </div>
@@ -139,6 +126,7 @@
 
   <hr>
 
+  <!-- Studies -->
   <section class="studies" id="studies">
     <div class="col">
 
@@ -149,8 +137,8 @@
         </div>
       </div>
 
-      <div class="row py-4 d-flex align-items-center">
-        <div class="col-md-6 col-lg-6">
+      <div class="row justify-content-md-center py-4">
+        <div class="col-md-4 col-lg-4">
           <div class="text-center">
             <div class="hi-icon-wrap hi-icon-effect">
               <h4>ENIB Engineering School - Brest (FR)</h4>
@@ -161,7 +149,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-4 col-lg-4">
           <div class="text-center">
             <div class="hi-icon-wrap hi-icon-effect">
               <h4>High School Teyssier - Bitche (FR)</h4>
@@ -180,6 +168,7 @@
 
   <hr>
 
+  <!-- Studies -->
   <section id="skills">
     <div class="col">
 
@@ -250,110 +239,188 @@
 
   <hr>
 
-  <div class="scrollDownDiv">
-    <button onclick="goToHome()" class="buttonScroll">Go Top</button>
-  </div>
 
+  <section id="projects">
+    <!-- Carousel -->
+    <div class="col">
+
+      <div class="row">
+        <div class="col-md-12 col-lg-12 text-center">
+          <h2 class="display-4">My projects</h2>
+        </div>
+      </div>
+
+      <div class="first-container container-fluid py-4">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <img class="d-block w-100" src="img/biken.png" alt="Biken Preview">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="dark-t">Biken Software</h5>
+                <p class="dark-t">School project of pathfinding on OpenStreetMap data</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/spoty.png" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block text-zone">
+                <h5 class="dark-t">Spoty</h5>
+                <p class="dark-t">Obtaining Data to recommand kite and wind surf spots</p>
+              </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-6 col-lg-6 col-xl-3 text-center">
+          <div class="project-card">
+            <h2>Spoty</h2>
+            <p class="project-place">Ocean Hackathon 2019, Brest</p>
+            <p class="project-descriptor">We made a prototype of a web application for ranking and recommanding
+               kitesurf and windsurf spots. I worked on obtaining data with different free APIs and data sets made
+               available by companies for the event.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3 text-center">
+          <div class="project-card">
+            <h2>Biken Software</h2>
+            <p class="project-place">ENIB</p>
+            <p class="project-descriptor">During our 3rd year at ENIB, I developed with friends a software to generate
+              random bike routes in France. This software uses a pathfinding algorithm to create the best appropriate path.
+               You can choose the distance you want to travel or you can simply define a starting point and a destination
+               point. All this works on OpenStreetMap data.</p>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 col-lg-6 col-xl-3 text-center">
+          <div class="project-card">
+            <h2>Biken Software</h2>
+            <p class="project-place">ENIB</p>
+            <p class="project-descriptor">During our 3rd year at ENIB, I developed with friends a software to generate
+              random bike routes in France. This software uses a pathfinding algorithm to create the best appropriate path.
+               You can choose the distance you want to travel or you can simply define a starting point and a destination
+               point. All this works on OpenStreetMap</p>
+          </div>
+        </div> -->
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="page-footer font-small unique-color-dark">
+    <div class="big-container">
+      <div class="light">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0 white">Follow me on social networks!</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!--LinkedIn-->
+              <a class="li-ic" href="https://www.linkedin.com/in/quentin-philipp/">
+                <i class="fa fa-linkedin white-text mr-4 white"> </i>
+              </a>
+              <!--Github-->
+              <a class="git-ic" href="https://github.com/QuentinPhilipp/">
+                <i class="fa fa-github white-text mr-4 white"> </i>
+              </a>
+              <!--Gitlab -->
+              <a class="tw-ic" href="https://gitlab.com/QuentinPhilipp">
+                <i class="fa fa-gitlab white-text white"> </i>
+              </a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container-flex text-center text-md-left mt-5 dark">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+
+            <!-- Content -->
+            <h6 class="white text-uppercase font-weight-bold">Info</h6>
+            <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 40px;">
+            <p class="white">I'm a student in engineering school. I'm currently looking for an internship for 4 to 5 month</p>
+
+          </div>
+
+          <!-- Grid column -->
+          <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-center mb-4"> -->
+          <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold white text-center mt-4 mb-4">Download my CV</h6>
+            <!-- <div class="button-container "> -->
+            <a href="img/QuentinPhilippResume.pdf" download="CV" class="download-button">Download</a>
+            <!-- </div> -->
+
+
+
+
+
+          </div>
+
+          <!-- Grid column -->
+          <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
+
+            <!-- Links -->
+            <h6 class="text-uppercase white font-weight-bold">Contact</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 75px;">
+            <p class="white">
+              <i class=" fa fa-home mr-3"></i>Brest, 8 rue du rempart, France</p>
+            <p class="white">
+              <i class=" fa fa-envelope mr-3"></i>quentin.philipp@hotmail.fr</p>
+            <p class="white">
+              <i class=" fa fa-phone mr-3"></i>(+33) 07 89 84 15 87</p>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <p class="text-center white copyright-label">© 2019 Copyright : Quentin Philipp</p>
+
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- JS Scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
-<!-- Footer -->
-<footer id="footer" class="page-footer font-small unique-color-dark">
-  <div class="big-container">
-    <div class="light">
-      <div class="container">
 
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0 white">Follow me on social networks!</h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right">
-            <!--LinkedIn-->
-            <a class="li-ic" href="https://www.linkedin.com/in/quentin-philipp/">
-              <i class="fa fa-linkedin white-text mr-4 white"> </i>
-            </a>
-            <!--Github-->
-            <a class="git-ic" href="https://github.com/QuentinPhilipp/">
-              <i class="fa fa-github white-text mr-4 white"> </i>
-            </a>
-            <!--Gitlab -->
-            <a class="tw-ic" href="https://gitlab.com/QuentinPhilipp">
-              <i class="fa fa-gitlab white-text white"> </i>
-            </a>
-
-          </div>
-          <!-- Grid column -->
-
-        </div>
-        <!-- Grid row-->
-
-      </div>
-    </div>
-
-    <!-- Footer Links -->
-    <div class="container-flex text-center text-md-left mt-5 dark">
-
-      <!-- Grid row -->
-      <div class="row mt-3">
-
-        <!-- Grid column -->
-        <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
-
-          <!-- Content -->
-          <h6 class="white text-uppercase font-weight-bold">Info</h6>
-          <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 40px;">
-          <p class="white">I'm a student in engineering school. I'm currently looking for an internship for 4 to 5 month</p>
-
-        </div>
-
-        <!-- Grid column -->
-        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto text-center mb-4"> -->
-        <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center mb-4">
-
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold white text-center mt-4 mb-4">Download my CV</h6>
-          <!-- <div class="button-container "> -->
-          <a href="img/QuentinPhilippResume.pdf" download="CV" class="download-button">Download</a>
-          <!-- </div> -->
-
-
-
-
-
-        </div>
-
-        <!-- Grid column -->
-        <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
-
-          <!-- Links -->
-          <h6 class="text-uppercase white font-weight-bold">Contact</h6>
-          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto white-bg" style="width: 75px;">
-          <p class="white">
-            <i class=" fa fa-home mr-3"></i>Brest, 8 rue du rempart, France</p>
-          <p class="white">
-            <i class=" fa fa-envelope mr-3"></i>quentin.philipp@hotmail.fr</p>
-          <p class="white">
-            <i class=" fa fa-phone mr-3"></i>(+33) 07 89 84 15 87</p>
-          <p class="white">
-            <i class=" fa fa-print mr-3"></i> + 01 234 567 89</p>
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <p class="text-center white copyright-label">© 2019 Copyright : Quentin Philipp</p>
-
-  </div>
-</footer>
-<!-- Footer -->
 
 </html>
