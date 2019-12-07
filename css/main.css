@@ -65,7 +65,7 @@ text-decoration: none;
 border: 1px solid white;
 padding: 14px 50px;
 overflow: hidden;
-transition: 1s all ease;
+transition: 0.5s all ease;
 max-width: 40vw;
 /* margin-left: 50%; */
 }
@@ -79,7 +79,7 @@ max-width: 40vw;
 
 .nice-hover:hover {
   background: rgb(91, 91, 91);
-  transition: 1s all ease;
+  transition: 0.5s all ease;
 }
 
 .spec-container {
@@ -112,6 +112,7 @@ max-width: 40vw;
   color: white;
 }
 
+
 .python {width: 80%; background-color: #581845;}
 .html {width: 70%; background-color: #900c3f;}
 .cpp {width: 70%; background-color: #c70039;}
@@ -130,6 +131,13 @@ max-width: 40vw;
 .container-skill {
   background: rgb(187, 187, 187);
   border: 1px solid rgb(162, 162, 162);
+  transition: 0.1s all ease;
+}
+
+
+.container-skill:hover {
+  transform: scale(1.01,1.05);
+  background: rgb(220, 220, 220);
 }
 
 .skill-name {
@@ -139,7 +147,8 @@ max-width: 40vw;
 
 .other-skill {
   padding: 30px 30px 30px 30px;
-  background-color: #ffc300;
+  /* background-color: #ffc300; */
+  background: linear-gradient(#900c3f,#c70039);
   border-radius: 40px;
   font-size: 20px;
   color : rgb(255, 255, 255);
@@ -149,7 +158,7 @@ max-width: 40vw;
 }
 
 .other-skill:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 
@@ -157,7 +166,7 @@ max-width: 40vw;
 .scrollTopButton {
   position: fixed;
   bottom: 5%;
-  right : 5%;
+  right : 1%;
   z-index: 5;
   display: none;
 }
@@ -167,7 +176,7 @@ max-width: 40vw;
   background: rgb(138, 138, 138);
   color: white;
   font-size: 20px;
-  padding: 20px 20px 20px 20px;
+  padding: 10px 5px 10px 5px;
   border-radius: 10px;
   transition: 0.2s;
 }
