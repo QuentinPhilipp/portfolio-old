@@ -3,6 +3,8 @@ var isInViewport = function (elem) {
     return ( bounding.top <= document.documentElement.clientHeight);
 };
 
+var offsetTop = 70;
+
 var mybutton = document.getElementById("btnscroll");
 var myfooter = document.getElementById("footer");
 
@@ -50,13 +52,16 @@ function goToContact() {
   $('html, body').animate({
     scrollTop: $("#footer").offset().top
 
-}, 1500);
+}, 1000);
   $('.navbar-collapse').collapse('hide');
+  var mycontacts = document.getElementById("contact");
+  mycontacts.style.background="#5b5b5b";
+  setTimeout(() => {  mycontacts.style.background="#343a40"; }, 1700);
 }
 
 function goToStudies() {
   $('html, body').animate({
-    scrollTop: $("#studies").offset().top-50
+    scrollTop: $("#studies").offset().top-offsetTop
 
 }, 1500);
 $('.navbar-collapse').collapse('hide');
@@ -64,7 +69,7 @@ $('.navbar-collapse').collapse('hide');
 
 function goToSkills() {
   $('html, body').animate({
-    scrollTop: $("#skills").offset().top-50
+    scrollTop: $("#skills").offset().top-offsetTop
 
 }, 1500);
 $('.navbar-collapse').collapse('hide');
@@ -72,7 +77,7 @@ $('.navbar-collapse').collapse('hide');
 
 function goToProjects() {
   $('html, body').animate({
-    scrollTop: $("#projects").offset().top-50
+    scrollTop: $("#projects").offset().top-offsetTop
 }, 1500);
 $('.navbar-collapse').collapse('hide');
 }
