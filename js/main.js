@@ -5,6 +5,25 @@ function goToHome() {
 }, 1000);
 }
 
+var mybutton = document.getElementById("btnscroll");
+
+$(window).scroll(testScroll);
+
+window.onload = testScroll()
+
+function testScroll() {
+  var tempScrollTop = $(window).scrollTop();
+  console.log("Scroll from Top: " + tempScrollTop.toString());
+  if(tempScrollTop>500)
+  {
+    mybutton.style.display= 'block' ;
+  }
+  else
+  {
+    mybutton.style.display= 'none' ;
+  }
+};
+
 function goToContact() {
   $('html, body').animate({
     scrollTop: $("#footer").offset().top
@@ -47,23 +66,3 @@ $('.navbar-nav>li>a').on('click', function(){
   console.log("Test");
     $('.navbar-collapse').collapse('hide');
 });
-
-
-var mybutton = document.getElementById("btnscroll");
-
-$(window).scroll(testScroll);
-
-window.onload = testScroll()
-
-function testScroll() {
-  var tempScrollTop = $(window).scrollTop();
-  console.log("Scroll from Top: " + tempScrollTop.toString());
-  if(tempScrollTop>500)
-  {
-    mybutton.style.display= 'block' ;
-  }
-  else
-  {
-    mybutton.style.display= 'none' ;
-  }
-};
