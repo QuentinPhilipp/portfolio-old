@@ -14,7 +14,6 @@ window.onload = testScroll()
 
 function testScroll() {
   var tempScrollTop = $(window).scrollTop();
-
   // console.log(myfooter);
   if(tempScrollTop>500)
   {
@@ -22,17 +21,14 @@ function testScroll() {
 
     if (isInViewport(myfooter)) {
         var bounding = myfooter.getBoundingClientRect();
-
         var height = document.documentElement.clientHeight - bounding.top+45;
         var heightStr = height.toString().concat("px");
         mybutton.style.bottom=heightStr;
-
     }
     else
     {
       mybutton.style.bottom= "5%";
     }
-
   }
   else
   {
@@ -44,15 +40,14 @@ function testScroll() {
 function goToHome() {
   $('html, body').animate({
     scrollTop: 0
-
 }, 1000);
 }
 
 function goToContact() {
   $('html, body').animate({
     scrollTop: $("#footer").offset().top
-
 }, 1000);
+
   $('.navbar-collapse').collapse('hide');
   var mycontacts = document.getElementById("contact");
   mycontacts.style.background="#5b5b5b";

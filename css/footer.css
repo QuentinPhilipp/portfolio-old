@@ -25,7 +25,7 @@ max-width: 40vw;
 
 
 .nice-hover:hover {
-  background: rgb(91, 91, 91);
+  background: rgb(91, 91, 91) !important;
   transition: 0.5s all ease;
 }
 
@@ -40,4 +40,7 @@ max-width: 40vw;
   margin-bottom: 0;
   padding-bottom: 15px;
   font-size: 12px;
+}
+.icon-social {
+  font-size: 20px;
 }
