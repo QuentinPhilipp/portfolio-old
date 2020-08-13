@@ -1,232 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <title>My Website</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/skills.css">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/timeline.css">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <section>
+         <header>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+               <div class="container">
+                  <a class="navbar-brand" href="#" onclick="goToHome()">Philipp Quentin</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" onclick="goToStudies()">My studies</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" onclick="goToSkills()">My skills</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" onclick="goToProjects()">My projects</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="https://github.com/QuentinPhilipp/">Github</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" onclick="goToContact()">Contact Me</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <div class="row banner">
+               <div class="banner-text">
+                  <h1 class="responsive-headline">I'm Quentin Philipp.</h1>
+                  <h3>I'm a French <span>engineer student</span>, passionated about <span>development</span> and <span>embedded systems.</span>
+                     Scroll to learn more <a class="smoothscroll" href="#about">about me</a>.
+                  </h3>
+                  <hr />
+                  <ul class="social">
+                     <li><a href="https://github.com/QuentinPhilipp/"><i class="fa fa-github"></i></a></li>
+                     <li><a href="https://www.linkedin.com/in/quentin-philipp/"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+            <a href="#about" class="scroll-down" address="true"></a>
+      </section>
+      </header>
+      <!-- About Section
+         ================================================== -->
+      <section id="about">
+         <div class="row justify-content-center">
+            <div class="col-lg-2 col-sm-3">
+               <img class="profile-pic"  src="img/profile-picture.jpg" alt="" />
+            </div>
+            <div class="col-lg-5 col-sm-8">
+               <h2>About Me</h2>
+               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+               </p>
+               <div class="row pt-4">
+                  <div class="col">
+                     <h2>Contact Details</h2>
+                     <p class="address">
+                        <span>Quentin Philipp</span><br>
+                        <span>6 rue saint Hubert<br>
+                        57620 Lemberg, France
+                        </span><br>
+                        <span>+337.89.84.15.87</span><br>
+                     </p>
+                  </div>
+                  <div class="col download">
+                     <p>
+                        <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     </p>
+                  </div>
+                  <!-- <div class="columns download">
+                     <p>
+                        <a href="images/QuentinPhilippResume.pdf" download class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     </p>
+                  </div> -->
+               </div>
+               <!-- end row -->
+            </div>
+            <!-- end .main-col -->
+         </div>
+      </section>
+      <!-- About Section End-->
 
-  <title>My Website</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/skills.css">
-  <link rel="stylesheet" href="css/footer.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#" onclick="goToHome()">Philipp Quentin</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="goToStudies()">My studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="goToSkills()">My skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="goToProjects()">My projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/QuentinPhilipp/">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="goToContact()">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+      <!-- Studies -->
+      <section class="py-4 studies" id="studies">
+        <div class="container">
+        <div class="row pt-4">
+            <div class="col-md-12">
+                <div class="main-timeline">
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="title">August 2021 : Graduation</h3>
+                            <p class="description">
+                                After a six month end-of-study internship I will be graduated in August 2021.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <h3 class="title">October 2020 - February 2021 : Semester abroad</h3>
+                            <p class="description">
+                                I went to study at the University of Ljubjana as part of an Erasmus exchange. This allowed me to discover other
+                                knowledge since I chose courses that are not given in my school. I followed courses in embedded electronics, networking and AI.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <h3 class="title">2016 - 2021 : ENIB (FR)</h3>
+                            <p class="description">
+                                I trained as a general engineer at ENIB. Our courses are composed of mechanics, electronics and computer science.
+                                I specialized during my last two years in electronics and computer science.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <h3 class="title">2013 - 2016 : High School Teyssier - Bitche (FR)</h3>
+                            <p class="description">
+                                High school science degree
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
+      </section>
 
-  <!-- Wave -->
-  <!-- <div class="wave-container">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#343a40" fill-opacity="1" d="M0,192L17.1,176C34.3,160,69,128,103,149.3C137.1,171,171,245,206,261.3C240,277,274,235,309,181.3C342.9,128,377,64,411,37.3C445.7,11,480,21,514,69.3C548.6,117,583,203,617,240C651.4,277,686,267,720,229.3C754.3,192,789,128,823,96C857.1,64,891,64,926,101.3C960,139,994,213,1029,208C1062.9,203,1097,117,1131,96C1165.7,75,1200,117,1234,149.3C1268.6,181,1303,203,1337,197.3C1371.4,192,1406,160,1423,144L1440,128L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path></svg>
-  </div> -->
+  <!-- Skills -->
+  <section id="skills" class="py-4">
 
-  <!-- Scroll Button -->
-  <div id="btnscroll" class="scroll-top-container">
-    <!-- <button onclick="goToHome()" class="buttonScrollTop">Scroll Top</button> -->
-    <i class="fa fa-chevron-up button-scroll-top" onclick="goToHome()"></i>
-  </div>
-
-
-  <!-- Three Pic -->
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/01.jpeg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1 text-center">
-          <div class="p-5">
-            <h2 class="pic-title">Development</h2>
-            <p>Programming has always been my specialty at school.
-              I have worked on very different technologies, from Web
-              languages to low-level programming in C for embedded systems
-              and software development. I have knowledge of using Github/Gitlab.  </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 ">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/enib.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6  text-center">
-          <div class="p-5">
-            <h2 class="pic-title">ENIB Engineering School</h2>
-            <p>Training at ENIB is generalist with a specialization
-              in the last two years. I have chosen Interactive Application
-              Development. I learned Android programming and I was able to
-              improve my web development skills</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1 text-center">
-          <div class="p-5">
-            <h2 class="pic-title">Embedded systems</h2>
-            <p>During my training I used electronic boards to make embedded
-              systems (Robot, Motor control system, Real-time OS). I have worked
-              on STM32 Nucleo cards but also on more "mainstream" cards like
-              Arduinos or Rapsberry Pi</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr>
-
-  <!-- Studies -->
-  <section class="studies" id="studies">
     <div class="col">
 
-      <div class="row">
-        <div class="col-md-12 col-lg-12 text-center">
-          <h2 class="display-4">Education</h2>
-          <h4>Short resume of my education</h4>
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center py-4">
-        <div class="col-md-4 col-lg-4">
-          <div class="text-center">
-            <div class="hi-icon-wrap hi-icon-effect">
-              <h4>ENIB Engineering School - Brest (FR)</h4>
-              <h5>2016 - 2021</h5>
-              <i class="fa fa-laptop round-ico"></i>
-              <p>General school but I specialized in IT</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-4">
-          <div class="text-center">
-            <div class="hi-icon-wrap hi-icon-effect">
-              <h4>High School Teyssier - Bitche (FR)</h4>
-              <h5>2013 - 2016</h5>
-              <i class="fa fa-book round-ico"></i>
-              <p>Bachelor's degree in 2016</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <hr>
-
-  <!-- Studies -->
-  <section id="skills">
-    <div class="col">
-
-    <div class="row">
+    <div class="row white-t">
       <div class="col-md-12 col-lg-12 text-center">
         <h2 class="display-4">Skills</h2>
         <h4>My main development skills</h4>
       </div>
     </div>
 
-    <div class="container-skills">
+    <div class="container-skills white-t">
 
       <p class="skill-name">Python</p>
       <div class="container-skill">
-        <div class="skills python">80%</div>
+        <div class="skills movechart python">80%</div>
+      </div>
+
+      <p class="skill-name">C++ / C</p>
+      <div class="container-skill">
+        <div class="skills movechart cpp">70%</div>
       </div>
 
       <p class="skill-name">HTML / CSS / JS</p>
       <div class="container-skill">
-        <div class="skills html">70%</div>
+        <div class="skills movechart html">60%</div>
       </div>
 
-      <p class="skill-name">C++</p>
-      <div class="container-skill">
-        <div class="skills cpp">70%</div>
-      </div>
+
 
       <p class="skill-name">Angular Framework</p>
       <div class="container-skill">
-        <div class="skills angular">60%</div>
+        <div class="skills movechart angular">60%</div>
       </div>
 
       <p class="skill-name">Android</p>
       <div class="container-skill">
-        <div class="skills android">50%</div>
+        <div class="skills movechart android">40%</div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row white-t">
       <div class="col-md-12 col-lg-12  text-center">
         <h4>My others skills</h4>
       </div>
     </div>
 
-    <div class="row d-flex my-4 justify-content-md-center">
-      <div class="col-md-3 col-lg-2 text-center">
+    <div class="row d-flex my-4 justify-content-md-center dark-t">
+      <div class="col-md-6 col-lg-2 text-center">
         <p class="other-skill">Qt</p>
       </div>
-      <div class="col-md-3 col-lg-2 text-center">
-        <p class="other-skill">SQL</p>
+      <div class="col-md-6 col-lg-2 text-center">
+        <p class="other-skill">TCP/IP networks</p>
       </div>
-      <div class="col-md-3 col-lg-2 text-center">
-        <p class="other-skill">C</p>
+      <div class="col-md-6 col-lg-2 text-center">
+        <p class="other-skill">CAN / SPI / I2C</p>
       </div>
       <div class="col-md-6 col-lg-2 text-center">
         <p class="other-skill">Electronics</p>
@@ -239,14 +237,13 @@
 
   </section>
 
-  <hr>
 
 
-  <section id="projects">
+  <section id="projects" class="dark light-t py-4" >
     <!-- Carousel -->
     <div class="col">
 
-      <div class="row">
+      <div class="row ">
         <div class="col-md-12 col-lg-12 text-center">
           <h2 class="display-4">My projects</h2>
         </div>
@@ -256,7 +253,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="img/biken.png" alt="Biken Preview">
+              <img class="d-block w-100" src="img/bikenweb.png" alt="Biken Preview">
               <div class="carousel-caption d-none d-md-block text-zone">
                 <h5 class="dark-t">Biken Web</h5>
                 <p class="dark-t">New version on web browser for the project Biken</p>
@@ -365,15 +362,17 @@
   <!-- Footer -->
   <footer id="footer" class="page-footer font-small unique-color-dark">
     <div class="big-container">
-      <div class="light">
+      <div class="light dark-t">
+        <hr class="separator-1">
         <div class="container">
+
 
           <!-- Grid row-->
           <div class="row py-4 d-flex align-items-center">
 
             <!-- Grid column -->
             <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 class="mb-0 white-t">Follow me on social networks!</h6>
+              <h6 class="mb-0">Follow me on social networks!</h6>
             </div>
             <!-- Grid column -->
 
@@ -381,15 +380,15 @@
             <div class="col-md-6 col-lg-7 text-center text-md-right">
               <!--LinkedIn-->
               <a class="li-ic" href="https://www.linkedin.com/in/quentin-philipp/">
-                <i class="fa fa-linkedin white-t-text mr-4 white-t icon-social"> </i>
+                <i class="fa fa-linkedin mr-4 dark-t icon-social"> </i>
               </a>
               <!--Github-->
               <a class="git-ic" href="https://github.com/QuentinPhilipp/">
-                <i class="fa fa-github white-t-text mr-4 white-t icon-social"> </i>
+                <i class="fa fa-github mr-4 dark-t icon-social"> </i>
               </a>
               <!--Gitlab -->
               <a class="tw-ic" href="https://gitlab.com/QuentinPhilipp">
-                <i class="fa fa-gitlab white-t-text white-t icon-social"> </i>
+                <i class="fa fa-gitlab dark-t icon-social"> </i>
               </a>
 
             </div>
@@ -399,21 +398,23 @@
           <!-- Grid row-->
 
         </div>
+        <hr class="separator-1">
+
       </div>
 
       <!-- Footer Links -->
-      <div class="container-flex text-center text-md-left mt-5 dark">
+      <div class="container-flex text-center text-md-left py-4 dark light-t">
 
         <!-- Grid row -->
         <div class="row mt-3">
 
           <!-- Grid column -->
-          <div class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+          <div class="spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
 
             <!-- Content -->
-            <h6 class="white-t text-uppercase font-weight-bold">Info</h6>
-            <hr class="white-t accent-2 mb-4 mt-0 d-inline-block mx-auto white" style="width: 40px;">
-            <p class="white-t">I'm a student in engineering school. I'm currently looking for an end of studies internship of 5 to 6 month starting from March 2021</p>
+            <h6 class="text-uppercase font-weight-bold">Info</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto light " style="width: 40px;">
+            <p >I'm a student in engineering school. I'm currently looking for an end of studies internship of 5 to 6 month starting from March 2021</p>
 
           </div>
 
@@ -422,7 +423,7 @@
           <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center mb-4">
 
             <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold white-t text-center mt-4 mb-4">Download my CV</h6>
+            <h6 class="text-uppercase font-weight-bold text-center mt-4 mb-4">Download my CV</h6>
             <!-- <div class="button-container "> -->
             <a href="img/QuentinPhilippResume.pdf" download="CV" class="download-button">Download</a>
             <!-- </div> -->
@@ -431,16 +432,16 @@
           </div>
 
           <!-- Grid column -->
-          <div id="contact" class="nice-hover spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
+          <div id="contact" class="spec-container col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
 
             <!-- Links -->
-            <h6 class="text-uppercase white-t font-weight-bold">Contact</h6>
-            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto white" style="width: 75px;">
-            <p class="white-t">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto light" style="width: 75px;">
+            <p>
               <i class=" fa fa-home mr-3"></i>Lemberg, 6 rue saint Hubert, France</p>
-            <p class="white-t">
+            <p>
               <i class=" fa fa-envelope mr-3"></i>quentin.philipp@hotmail.fr</p>
-            <p class="white-t">
+            <p>
               <i class=" fa fa-phone mr-3"></i>(+33) 07 89 84 15 87</p>
 
           </div>
@@ -457,6 +458,7 @@
   <!-- Footer -->
 
   <!-- JS Scripts -->
+  <script type="text/javascript" src="js/jquery.fittext.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
