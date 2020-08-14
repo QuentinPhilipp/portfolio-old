@@ -3,8 +3,10 @@
 <h3> 👨🏻‍💻 About Me </h3>
 
 - 🎓 &nbsp; Studying Computer Science and Embedded System at Brest National School of Engineering (ENIB), France.
-- 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
+- 🤔 &nbsp; Exploring new technologies and developing software solutions.
 
+<h3> 🌐 Check my website </h3>
+<a href="https://www.quentinphilipp.github.io/QuentinPhilipp"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
 
 <h3>🛠 Tech Stack</h3>
 
@@ -34,17 +36,30 @@
 
 <h3>🤖 Embedded system tools and techs</h3>
 
-- Boards &nbsp; STM32| RaspberryPi | Arduino | ESP8266
-- Protocols &nbsp; CAN | I2C | SPI | USB | UART | USART
-- OS &nbsp; Windows | Linux | RTOS
-- Other knowledges &nbsp; TCP/IP Networks
+- 💻 &nbsp; 
+  ![STM32](https://img.shields.io/badge/STM32-333333?style=flat&logo=stm32)
+  ![RaspberryPi](https://img.shields.io/badge/RaspberryPi-333333?style=flat&logo=raspberry%20pi)
+  ![Arduino](https://img.shields.io/badge/Arduino-333333?style=flat&logo=arduino)
+  ![ESP8266](https://img.shields.io/badge/ESP8266-333333?style=flat&logo=esp)
+- 🌐 &nbsp;
+  ![CAN](https://img.shields.io/badge/CAN-333333?style=flat&logo=can)
+  ![I2C](https://img.shields.io/badge/I2C-333333?style=flat&logo=i2c)
+  ![SPI](https://img.shields.io/badge/SPI-333333?style=flat&logo=spi)
+  ![USB](https://img.shields.io/badge/USB-333333?style=flat&logo=usb)
+  ![UART](https://img.shields.io/badge/UART-333333?style=flat&logo=uart)
+  ![USART](https://img.shields.io/badge/USART-333333?style=flat&logo=usart)
+  ![TCP-IP](https://img.shields.io/badge/TCP_IP-333333?style=flat&logo=ip)
+
+- ⚙️ &nbsp;
+  ![Windows](https://img.shields.io/badge/Windows-333333?style=flat&logo=windows)
+  ![Linux](https://img.shields.io/badge/Linux-333333?style=flat&logo=linux)
+  ![RTOS](https://img.shields.io/badge/RTOS-333333?style=flat&logo=rtos)
 
 <br/>
 
 <h3> 🤝🏻 Connect with Me </h3>
 
 <p align="center">
-<a href="https://www.quentinphilipp.github.io/QuentinPhilipp"><img alt="Website" src="https://img.shields.io/badge/Website-www.quentinphilipp.github.io/QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
 <a href="https://www.linkedin.com/in/quentin-philipp/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Quentin%20Philipp%20-blue?style=flat-square&logo=linkedin"></a>
 <a href="mailto:quentin.philipp@hotmail.fr"><img alt="Email" src="https://img.shields.io/badge/Email-quentin.philipp@hotmail.fr-blue?style=flat-square&logo=gmail"></a>
 </p>
