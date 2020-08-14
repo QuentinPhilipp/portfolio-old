@@ -6,7 +6,7 @@
 - 🤔 &nbsp; Exploring new technologies and developing software solutions.
 
 <h3> 🌐 Check my website </h3>
-<a href="https://www.quentinphilipp.github.io/QuentinPhilipp"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
+<a href="https://quentinphilipp.github.io/QuentinPhilipp/"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
 
 <h3>🛠 Tech Stack</h3>
 
@@ -60,6 +60,6 @@
 <h3> 🤝🏻 Connect with Me </h3>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/quentin-philipp/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Quentin%20Philipp%20-blue?style=flat-square&logo=linkedin"></a>
+<a href="https://linkedin.com/in/quentin-philipp/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Quentin%20Philipp%20-blue?style=flat-square&logo=linkedin"></a>
 <a href="mailto:quentin.philipp@hotmail.fr"><img alt="Email" src="https://img.shields.io/badge/Email-quentin.philipp@hotmail.fr-blue?style=flat-square&logo=gmail"></a>
 </p>
