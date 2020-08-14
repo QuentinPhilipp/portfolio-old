@@ -78,13 +78,9 @@ function goToHome() {
 
 function goToContact() {
   $('html, body').animate({
-    scrollTop: $("#footer").offset().top
-}, 1000);
-
-  $('.navbar-collapse').collapse('hide');
-  var mycontacts = document.getElementById("contact");
-  mycontacts.style.background="#5b5b5b";
-  setTimeout(() => {  mycontacts.style.background="#343a40"; }, 1700);
+    scrollTop: $("#about").offset().top-offsetTop
+}, 1500);
+$('.navbar-collapse').collapse('hide');
 }
 
 function goToStudies() {

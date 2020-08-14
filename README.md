@@ -8,17 +8,17 @@
 
 <h3>🛠 Tech Stack</h3>
 
-- 💻 &nbsp; 
+- 💻 &nbsp;
   ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
   ![C++](https://img.shields.io/badge/-C++-333333?style=flat&logo=C%2B%2B&logoColor=00599C)
   ![C](https://img.shields.io/badge/-C-333333?style=flat&logo=C&logoColor=00599C)
-- 🌐 &nbsp; 
+- 🌐 &nbsp;
   ![HTML](https://img.shields.io/badge/-HTML-333333?style=flat&logo=HTML5)
   ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
   ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
   ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=bootstrap&logoColor=563D7C)
   ![Angular](https://img.shields.io/badge/-Angular-333333?style=flat&logo=angular)
-- 🛢 &nbsp; 
+- 🛢 &nbsp;
   ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
   ![SQLite](https://img.shields.io/badge/-SQLite-333333?style=flat&logo=sqlite)
 - ⚙️ &nbsp;
@@ -37,16 +37,14 @@
 - Boards &nbsp; STM32| RaspberryPi | Arduino | ESP8266
 - Protocols &nbsp; CAN | I2C | SPI | USB | UART | USART
 - OS &nbsp; Windows | Linux | RTOS
-- Other knowledges &nbsp; TCP/IP Networks 
+- Other knowledges &nbsp; TCP/IP Networks
 
 <br/>
 
 <h3> 🤝🏻 Connect with Me </h3>
 
 <p align="center">
-<a href="https://www.quentinphilipp.github.io/"><img alt="Website" src="https://img.shields.io/badge/Website-www.quentinphilipp.github.io-blue?style=flat-square&logo=google-chrome"></a>
+<a href="https://www.quentinphilipp.github.io/QuentinPhilipp"><img alt="Website" src="https://img.shields.io/badge/Website-www.quentinphilipp.github.io/QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
 <a href="https://www.linkedin.com/in/quentin-philipp/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Quentin%20Philipp%20-blue?style=flat-square&logo=linkedin"></a>
 <a href="mailto:quentin.philipp@hotmail.fr"><img alt="Email" src="https://img.shields.io/badge/Email-quentin.philipp@hotmail.fr-blue?style=flat-square&logo=gmail"></a>
 </p>
-
-⭐️ From [AVS1508](https://github.com/AVS1508)
