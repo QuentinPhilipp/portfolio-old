@@ -3,13 +3,22 @@
 
 
 .studies {
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(57, 57, 57);
 }
 
 #skills {
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(80, 80, 80);
+}
+
+
+#projects {
+  background: rgb(103, 103, 103);
+}
+
+#footer {
+  background: rgb(204, 204, 204);
 }
 
 body,html {

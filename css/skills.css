@@ -78,15 +78,10 @@
 
 .other-skill {
   padding: 30px 30px 30px 30px;
-  background: #BAC7CE;
-  border-radius: 40px;
+  background: rgb(187, 187, 187);
+  border-radius: 5px;
   font-size: 20px;
   color : #304145
-  transition: 0.3s all ease;
   overflow: hidden;
   /* max-width: 60vw; */
-}
-
-.other-skill:hover {
-  transform: scale(1.02);
 }
