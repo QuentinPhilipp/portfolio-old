@@ -7,8 +7,8 @@
 
 <h3> 🌐 Check my website and the project i'm working on</h3>
 <p>
-<a href="https://quentinphilipp.github.io/QuentinPhilipp/"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
-<a href="http://bikenapp.com"><img alt="Website" src="https://img.shields.io/badge/Website-BikenWeb-blue?style=flat-square&logo=google-chrome"></a>
+<a href="https://quentinphilipp.github.io/QuentinPhilipp/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
+<a href="http://bikenapp.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-BikenWeb-blue?style=flat-square&logo=google-chrome"></a>
 </p>
 
 <h3>🛠 Tech Stack</h3>
