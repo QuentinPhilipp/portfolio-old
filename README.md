@@ -8,7 +8,7 @@
 <h3> 🌐 Check my website and the project i'm working on</h3>
 <p>
 <a href="https://quentinphilipp.github.io/QuentinPhilipp/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
-<a href="http://bikenapp.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-BikenWeb-blue?style=flat-square&logo=google-chrome"></a>
+<a href="https://bikenapp.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-BikenWeb-blue?style=flat-square&logo=google-chrome"></a>
 </p>
 
 <h3>🛠 Tech Stack</h3>
@@ -39,7 +39,7 @@
 
 <h3>🤖 Embedded system tools and techs</h3>
 
-- 💻 &nbsp; 
+- 💻 &nbsp;
   ![STM32](https://img.shields.io/badge/STM32-333333?style=flat&logo=stm32)
   ![RaspberryPi](https://img.shields.io/badge/RaspberryPi-333333?style=flat&logo=raspberry%20pi)
   ![Arduino](https://img.shields.io/badge/Arduino-333333?style=flat&logo=arduino)
