@@ -3,7 +3,10 @@ var isInViewport = function (elem) {
     return ( bounding.top <= document.documentElement.clientHeight);
 };
 
-var offsetTop = 55;
+// var offsetTop = 55;
+
+// 0 offset with transparent navbar
+var offsetTop = 0;
 
 var mybutton = document.getElementById("btnscroll");
 var myfooter = document.getElementById("footer");
