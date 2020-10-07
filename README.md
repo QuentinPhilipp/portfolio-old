@@ -3,7 +3,7 @@
 <h3> 👨🏻‍💻 About Me </h3>
 
 - 🎓 &nbsp; Studying Computer Science and Embedded System at Brest National School of Engineering (ENIB), France.
-- 🤔 &nbsp; Exploring new technologies and developing software solutions.
+- 🤔 &nbsp; Exploring new technologies and developing softwares.
 
 <h3> 🌐 Check my website and the project i'm working on</h3>
 <p>
