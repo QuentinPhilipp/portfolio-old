@@ -7,7 +7,7 @@
 
 <h3> 🌐 Check my website and the project i'm working on</h3>
 <p>
-<a href="https://quentinphilipp.github.io/QuentinPhilipp/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
+<a href="http://quentinp.me/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
 <a href="https://bikenapp.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-BikenWeb-blue?style=flat-square&logo=google-chrome"></a>
 </p>
 
