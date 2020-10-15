@@ -62,7 +62,7 @@
 
 <h3> 🤝🏻 Connect with Me </h3>
 
-<p align="center">
+<p>
 <a href="https://linkedin.com/in/quentin-philipp/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Quentin%20Philipp%20-blue?style=flat-square&logo=linkedin"></a>
 <a href="mailto:quentin.philipp@hotmail.fr"><img alt="Email" src="https://img.shields.io/badge/Email-quentin.philipp@hotmail.fr-blue?style=flat-square&logo=gmail"></a>
 </p>
