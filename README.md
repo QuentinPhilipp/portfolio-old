@@ -3,12 +3,12 @@
 <h3> 👨🏻‍💻 About Me </h3>
 
 - 🎓 &nbsp; Studying Computer Science and Embedded System at Brest National School of Engineering (ENIB), France.
-- 🤔 &nbsp; Exploring new technologies and developing softwares.
+- 🤔 &nbsp; Loves discovering new technologies and new ways to make software that I like.
 
 <h3> 🌐 Check my website and the project i'm working on</h3>
 <p>
-<a href="http://quentinp.me/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
-<a href="https://bikenapp.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-BikenWeb-blue?style=flat-square&logo=google-chrome"></a>
+<a href="http://quentinp.me/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Personal-Website-QuentinPhilipp-blue?style=flat-square&logo=google-chrome"></a>
+<a href="https://bikenapp.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Project-BikenWeb-blue?style=flat-square&logo=google-maps"></a>
 </p>
 
 <h3>🛠 Tech Stack</h3>
@@ -48,11 +48,7 @@
   ![CAN](https://img.shields.io/badge/CAN-333333?style=flat&logo=can)
   ![I2C](https://img.shields.io/badge/I2C-333333?style=flat&logo=i2c)
   ![SPI](https://img.shields.io/badge/SPI-333333?style=flat&logo=spi)
-  ![USB](https://img.shields.io/badge/USB-333333?style=flat&logo=usb)
   ![UART](https://img.shields.io/badge/UART-333333?style=flat&logo=uart)
-  ![USART](https://img.shields.io/badge/USART-333333?style=flat&logo=usart)
-  ![TCP-IP](https://img.shields.io/badge/TCP_IP-333333?style=flat&logo=ip)
-
 - ⚙️ &nbsp;
   ![Windows](https://img.shields.io/badge/Windows-333333?style=flat&logo=windows)
   ![Linux](https://img.shields.io/badge/Linux-333333?style=flat&logo=linux)
