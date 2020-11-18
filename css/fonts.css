@@ -105,8 +105,10 @@
 }
 
 /*
+
+
  * Libre Baskerville
-================================================================================ */   
+================================================================================ */
 @font-face {
     font-family: 'librebaskerville-bold';
     src: url('fonts/librebaskerville/librebaskerville-bold-webfont.eot');
@@ -140,6 +142,15 @@
 
 
 /*
+
+
+
+
+
+
+
+
+
  * FIXED for Font-Face Chrome Rendering
 ================================================================================ */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
