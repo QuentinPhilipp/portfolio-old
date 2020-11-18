@@ -1,7 +1,10 @@
 
 @import url("fonts.css");
 
-
+.star {
+  right: 30px;
+  position: absolute;
+}
 .studies {
   min-height: 100vh;
   background: rgb(57, 57, 57);
@@ -215,7 +218,6 @@ header .social li a:hover { color: #747474; }
 }
 
 
-
 /* Scroll Top Btn */
 .scroll-top-container {
   position: fixed;
@@ -256,6 +258,15 @@ header .social li a:hover { color: #747474; }
   max-width: 1000px;
   height: auto;
   position: relative;
+}
+.carousel-indicators .active{
+    background-color: #969696 !important;
+    opacity: 1 !important;
+
+}
+.indicators {
+  opacity: 0.80 !important;
+  background-color: #bababa !important;
 }
 
 /* Wave header */
