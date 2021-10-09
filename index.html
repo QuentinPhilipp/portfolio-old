@@ -1,634 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P52D7N9');</script>
-<!-- End Google Tag Manager -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <title>Quentin Philipp - Resume</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-      <!-- Font -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/skills.css">
-      <link rel="stylesheet" href="css/footer.css">
-      <link rel="stylesheet" href="css/timeline.css">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Philipp - Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-   </head>
-   <body>
-     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P52D7N9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-      <section>
-         <header>
-            <!-- Navigation -->
-            <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top" style="background-color: rgba(0,0,0,0)">
-               <div class="container">
-                  <a class="navbar-brand" href="#" onclick="goToHome()">Quentin Philipp</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse">
-                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                           <a class="nav-link" href="#" onclick="goToStudies()">My studies</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#" onclick="goToSkills()">My skills</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#" onclick="goToProjects()">My projects</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" target="_blank" href="https://github.com/QuentinPhilipp/">Github</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#" onclick="goToContact()">Contact Me</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-            <div class="row banner">
-               <div class="banner-text">
-                  <h1 class="responsive-headline">I'm <b>Quentin</b> Philipp</h1>
-                  <h3>I'm a French <span>engineer student</span>, passionated about <span>development</span> and <span>embedded systems.</span>
-                     Scroll to learn more <a class="smoothscroll" href="#about">about me</a>.
-                  </h3>
-                  <hr />
-                  <ul class="social">
-                     <li><a href="https://github.com/QuentinPhilipp/" target="_blank"><i class="fa fa-github"></i></a></li>
-                     <li><a href="https://www.linkedin.com/in/QuentinPhilipp" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-               </div>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="topnav" id="topnavResp">
+                <a class="strikeOnHover" href="#about">About</a>
+                <a class="strikeOnHover" href="#experiences">Experiences</a>
+                <a class="strikeOnHover" href="#skills">Skills</a>
+                <a class="strikeOnHover" href="#projects">Projects</a>
+                <a class="strikeOnHover" href="#contacts">Contacts</a>
+                <a class="strikeOnHover" id="switch-lang">FR/EN</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="row banner" id="startchange">
+                <div class="banner-text">
+                <h1 lang="en" class="responsive-headline">I'm <b>Quentin</b> Philipp</h1>
+                <h1 lang="fr" class="responsive-headline"><b>Quentin</b> Philipp</h1>
+                <h3 lang="en">I'm a French <span>engineer</span>, passionated about <span>development</span> and <span>embedded systems.</span>
+                    Scroll to learn more <a class="smoothscroll" href="#about">about me</a>.
+                </h3>
+                <h3 lang="fr" >Je suis un <span>ingénieur</span> passionné de <span>developpement</span> et de <span>systemes embarqués.</span>
+                    Scrollez pour découvrir <a class="smoothscroll" href="#about">mon profil</a>.
+                </h3>
+                <hr />
+                <ul class="social">
+                    <li><a href="https://github.com/QuentinPhilipp/" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/QuentinPhilipp" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                </div>
             </div>
             <a href="#about" class="scroll-down" address="true"></a>
-      </section>
-      </header>
-      <!-- About Section
-         ================================================== -->
-      <section id="about">
-         <div class="row mx-1 justify-content-center">
+        </header>
+    </section>
+    <section id="about">
+        <div class="row mx-1 justify-content-center">
             <div class="col-lg-2 col-sm-3">
-               <img class="profile-pic"  src="img/profile-picture.jpg" alt="" />
+                <img class="profile-pic"  src="img/profile-picture.jpg" alt="" />
             </div>
             <div class="col-lg-5 col-sm-8">
-               <h2>About Me</h2>
-               <p>I am an engineering student studying computer science and embedded systems.
-                  I have different experiences, academic and professional,
-                  in these two fields. I am motivated by the creation and improvement of systems.<br>
-                  I am currently looking for a company
-                  to do my end-of-study internship in software development.
-             </p>
-               <div class="row pt-4">
-                  <div class="col-md-6 col-sm-12">
-                     <h2>Contact Details</h2>
-                     <p class="address">
+                <h2>About Me</h2>
+                <p>I am an engineering student studying computer science and embedded systems.
+                    I have different experiences, academic and professional,
+                    in these two fields. I am motivated by the creation and improvement of systems.<br>
+                    I am currently looking for a company
+                    to do my end-of-study internship in software development.
+            </p>
+                <div class="row pt-4">
+                    <div class="col-md-6 col-sm-12">
+                    <h2>Contact Details</h2>
+                    <p class="address">
                         <span>Quentin Philipp</span><br>
-                        <span>6 rue saint Hubert<br>
-                        57620 Lemberg, France
-                        </span><br>
+                        <span>Lyon, France</span><br>
                         <span>quentin.philipp@hotmail.fr</span><br>
                         <span>(+33) 7.89.84.15.87</span><br>
-                     </p>
-                  </div>
-                  <div class="col-md-6 col-sm-12 download">
-                     <p>
+                    </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 download">
+                    <p>
                         <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="button downloadButtonTrack"><i class="fa fa-download"></i>Download Resume</a>
-                     </p>
-                  </div>
-                  <!-- <div class="columns download">
-                     <p>
+                    </p>
+                    </div>
+                    <!-- <div class="columns download">
+                    <p>
                         <a href="images/QuentinPhilippResume.pdf" download class="button"><i class="fa fa-download"></i>Download Resume</a>
-                     </p>
-                  </div> -->
-               </div>
-               <!-- end row -->
+                    </p>
+                    </div> -->
+                </div>
+                <!-- end row -->
             </div>
             <!-- end .main-col -->
-         </div>
-      </section>
-      <!-- About Section End-->
-
-      <!-- Studies -->
-      <section class="py-4 studies" id="studies">
-        <div class="row mx-1">
-
-        <div class="container col-lg-5 col-md-10 col-sm-10  my-4">
-          <h2 class="white-t text-center">School</h2>
-        <div class="row pt-4">
-            <div class="col-md-12">
-                <div class="main-timeline">
+        </div>
+    </section>
+    <section id="experiences">
+        <div class="container">
+            <h2 class="text-center">Experiences</h2>
+            <div class="row">
+                <div class="col-md-6 container">
+                    <h3 class="py-2">Professional</h3>
                     <div class="timeline">
-                        <a class="timeline-content">
-                            <div class="timeline-icon">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-                            <h3 class="title">August 2021 : Graduation</h3>
-                            <p class="white-t description">After an end-of-study internship of 6 months, I will graduate in August 2021.</p>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a class="timeline-content">
-                            <div class="timeline-icon">
-                                <i class="fa fa-globe"></i>
-                            </div>
-                            <h3 class="title">October 2020 - February 2021 : Semester abroad</h3>
-                            <p class="white-t description">
-                                I went to study at the University of Ljubljana as part of an Erasmus exchange. This allowed me to discover other
-                                knowledge since I chose courses that are not given in my school. I followed courses in embedded electronics, networking and AI.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a class="timeline-content">
+                        <div class="timeline-container success">
                             <div class="timeline-icon">
                                 <i class="fa fa-laptop"></i>
                             </div>
-                            <h3 class="title">2016 - 2021 : ENIB - Brest (FR)</h3>
-                            <p class="white-t description">
-                                I trained as a general engineer at ENIB. Our courses are composed of mechanics, electronics and computer science.
-                                I specialized during my last two years in electronics and computer science.
-                            </p>
-                        </a>
+                            <div lang="en" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Siemens Digital Industries Software, Lyon (FR)</span></h4>
+                                <p>Software engineer for System Analyst, a Python/Qt application used for industrial simulations of models.</p>
+                                <p class="timeline-subtitle">September 2021 - Now</p>
+                            </div>
+                            <div lang="fr" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Siemens Digital Industries Software, Lyon (FR)</span></h4>
+                                <p>Ingénisateur logiciel pour System Analyst. Un logiciel développé sur Python/Qt utilisé pour des simulations industrielles.</p>
+                                <p class="timeline-subtitle">Septembre 2021 - Maintenant</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container primary">
+                            <div class="timeline-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div lang="en" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Siemens Digital Industries Software, Lyon (FR)</span> <span class="badge">Internship</span> </h4>
+                                <p>Development of a user interface with Qt to simplify the creation of simulation model in Qt. Creation of a reusable graphic library to build a sketcher</p>
+                                <p class="timeline-subtitle">March 2021 - August 2021</p>
+                            </div>
+                            <div lang="fr" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Siemens Digital Industries Software, Lyon (FR)</span> <span class="badge">Stage</span> </h4>
+                                <p>Developpement d'une interface graphique avec Qt pour simplifier la création de modèle de simulation dans System Analyst.</p>
+                                <p class="timeline-subtitle">Mars 2021 - Aout 2021</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container primary">
+                            <div class="timeline-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div lang="en" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">INTK, Utrecht (NL)</span> <span class="badge">Internship</span> </h4>
+                                <p>Developping project of dashboards for cultural organisations to check their traffic and influence online. I worked with a lot of social media API and needed to aggregate all the data in a understandable interface.</p>
+                                <p class="timeline-subtitle">March 2020 - June 2020</p>
+                            </div>
+                            <div lang="fr" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">INTK, Utrecht (NL)</span> <span class="badge">Stage</span> </h4>
+                                <p>Developpement d'une solution web en Javascript pour la génération de dashboards et de rapport sur des statistiques provenant de réseaux sociaux et de sites web pour des organisations culturelles.</p>
+                                <p class="timeline-subtitle">Mars 2020 - Juin 2020</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container success">
+                            <div class="timeline-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div lang="en" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Magic Tech, Lyon (FR)</span></h4>
+                                <p>After my internship of 2 months, I stayed to work in the company for 1 month before returning to school.</p>
+                                <p class="timeline-subtitle">August 2019</p>
+                            </div>
+                            <div lang="fr" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Magic Tech, Lyon (FR)</span></h4>
+                                <p>Après mon stage de 2 mois, je suis resté en CDD 1 mois avant de retourner à l'école.</p>
+                                <p class="timeline-subtitle">Aout 2019</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container primary">
+                            <div class="timeline-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div lang="en" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Magic Tech, Lyon (FR)</span> <span class="badge">Internship</span></h4>
+                                <p>Conception and programmation of embedded systems on Arduino and Raspberry Pi. I worked with all the steps of conceptions including CAD, 3D priting, electronic circuit design, soldering, programming, ...</p>
+                                <p class="timeline-subtitle">June 2019 - July 2019</p>
+                            </div>
+                            <div lang="fr" class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Magic Tech, Lyon (FR)</span> <span class="badge">Stage</span></h4>
+                                <p>Conception et programmation de systeme embarqué sur Arduino et Raspberry Pi. J'ai travaillé sur toute les étapes de la conceptions des produits, CAO, impression 3D, conception éléctronique, soudure, assemblage et programmation</p>
+                                <p class="timeline-subtitle">Juin 2019 - Juillet 2019</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-6 container">
+                    <h3 class="py-2">School</h3>
                     <div class="timeline">
-                        <a class="timeline-content">
+                        <div class="timeline-container danger">
                             <div class="timeline-icon">
                                 <i class="fa fa-book"></i>
                             </div>
-                            <h3 class="title">2013 - 2016 : High School Teyssier - Bitche (FR)</h3>
-                            <p class="white-t description">
-                                High school science degree
-                            </p>
-                        </a>
+                            <div class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">ENIB Engineering School, Brest (FR)</span></h4>
+                                <p>I learned software design and development, embedded systems, artificial intelligence and web programming through various projects. 
+                                    Team work and management were part of many of these projects, which is something I love. I studied general engineering (mechanical engineering, 
+                                    electronics and computer science).</p>
+                                <p class="timeline-subtitle">2016 - 2021</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container danger">
+                            <div class="timeline-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="timeline-body">
+                                <h4 class="timeline-title"><span class="badge">Faculty of Electrical Engineering, University of Ljubjlana (SL)</span> <span class="badge">Erasmus</span></h4>
+                                <p>To replace my last semester at ENIB, I did an Erasmus exchange to discover another country and another university. I studied differents subjects that were not
+                                    available at my school.<br>
+                                    - Autonomous mobile systems<br>
+                                    - IA<br>
+                                    - Microelectronics<br>
+                                    - Networking<br>
+                                    - Circuit Analysis and optimisation<br>
+                                </p>
+                                <p class="timeline-subtitle">September 2020 - February 2021</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="container col-lg-5 col-md-10 col-sm-10 my-4">
-      <h2 class="white-t text-center">Internship</h2>
-    <div class="row pt-4">
-        <div class="col-md-12">
-            <div class="main-timeline">
-                <div class="timeline">
-                    <a class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-graduation-cap"></i>
-                        </div>
-                        <h3 class="title">March-August 2021 : End-of-study internship</h3>
-                        <p class="white-t description">I'm looking for an internship to complete my studies.</p>
-                    </a>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center" style="color: white">Skills</h2>
+            <div class="row mt-5 text-center">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-desktop fa-stack-1x icon-skill"></i>
+                    </span>
+                    <div class="details">
+                        <h3 class="skill-label">Software development</h3>
+                        <p class="skill-desc">Python, C++, Qt</p>
+                    </div>
                 </div>
-                <div class="timeline">
-                    <a class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-columns"></i>
-                        </div>
-                        <h3 class="title">March 2020 - June 2021 : Engineer Assistant internship</h3>
-                        <h6 class="white-t mb-2 lead">INTK, Utrecht (NL)</h6>
-                        <p class="white-t description">
-                            Developping and leading a project of dashboards for cultural organisations to check their
-                            traffic and influence online. I worked with
-                            a lot of social media API and needed to aggregate all the data in a understandable interface.
-                        </p>
-                    </a>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-cloud fa-stack-1x icon-skill"></i>
+                    </span>
+                    <div class="details">
+                        <h3 class="skill-label">Web development</h3>
+                        <p class="skill-desc">HTML, CSS, JavaScript</p>
+                    </div>
                 </div>
-                <div class="timeline">
-                    <a class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-code"></i>
-                        </div>
-                        <h3 class="title">June 2019 -  August 2019 : Technician internship</h3>
-                        <h6 class="white-t mb-2 lead">MagicTech, Lyon (FR)</h6>
-                        <p class="description white-t">
-                            Conception and programmation of embedded systems on Arduino and Raspberry Pi. After 2 months of Internship
-                            I stayed to work in the company for 1 month.
-                        </p>
-                    </a>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-desktop fa-stack-1x icon-skill"></i>
+                    </span>
+                    <div class="details">
+                        <h3 class="skill-label">Embedded systems</h3>
+                        <p class="skill-desc">ROS, RTOS, C</p>
+                        <p class="skill-desc">CAN, I2C, SPI, UART</p>
+                    </div>
                 </div>
-                <div class="timeline">
-                    <a class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fa fa-gear"></i>
-                        </div>
-                        <h3 class="title">January 2017 : Worker internship</h3>
-                        <h6 class="white-t mb-2 lead">Modiqua, Goetzenbruck (FR)</h6>
-                        <p class="description white-t">
-                            Machine assembly
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-      </section>
-
-
-  <!-- Skills -->
-  <section id="skills" class="py-4">
-
-    <div class="col">
-
-    <div class="row white-t">
-      <div class="col-md-12 col-lg-12 text-center">
-        <h2 class="display-4">Skills</h2>
-        <h4>My main development skills</h4>
-      </div>
-    </div>
-
-    <div class="container-skills white-t">
-
-      <p class="skill-name">Python</p>
-      <div class="container-skill">
-        <div class="skills movechart python">80%</div>
-      </div>
-
-      <p class="skill-name">C++ / C</p>
-      <div class="container-skill">
-        <div class="skills movechart cpp">70%</div>
-      </div>
-
-      <p class="skill-name">HTML / CSS / JS</p>
-      <div class="container-skill">
-        <div class="skills movechart html">60%</div>
-      </div>
-
-
-
-      <p class="skill-name">Angular Framework</p>
-      <div class="container-skill">
-        <div class="skills movechart angular">60%</div>
-      </div>
-
-      <p class="skill-name">Android</p>
-      <div class="container-skill">
-        <div class="skills movechart android">40%</div>
-      </div>
-    </div>
-
-    <div class="row white-t">
-      <div class="col-md-12 col-lg-12  text-center">
-        <h4>My others skills</h4>
-      </div>
-    </div>
-
-    <div class="row d-flex mt-4 justify-content-md-center dark-t">
-      <div class="col-md-6 col-lg-2 text-center">
-        <p class="other-skill">Qt</p>
-      </div>
-      <div class="col-md-6 col-lg-2 text-center">
-        <p class="other-skill">TCP/IP networks</p>
-      </div>
-      <div class="col-md-6 col-lg-2 text-center">
-        <p class="other-skill">CAN / SPI / I2C</p>
-      </div>
-      <div class="col-md-6 col-lg-2 text-center">
-        <p class="other-skill">Electronics</p>
-      </div>
-      <div class="col-md-6 col-lg-2 text-center">
-        <p class="other-skill">Embedded systems</p>
-      </div>
-    </div>
-  </section>
-
-
-
-<section id="projects">
-
-  <!-- Page Content -->
-  <div class="container pt-4">
-
-    <div class="row white-t">
-      <div class="col-md-12 col-lg-12 text-center">
-        <h2 class="display-4">Projects</h2>
-        <h4>My development projects</h4>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <a href="https://bikenapp.com/" target="_blank">
-
-          <!--Carousel Wrapper-->
-          <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-1z" data-slide-to="0" class="indicators active"></li>
-              <li data-target="#carousel-example-1z" data-slide-to="1" class="indicators"></li>
-              <li data-target="#carousel-example-1z" data-slide-to="2" class="indicators"></li>
-              <li data-target="#carousel-example-1z" data-slide-to="3" class="indicators"></li>
-              <li data-target="#carousel-example-1z" data-slide-to="4" class="indicators"></li>
-            </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-              <!--First slide-->
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="img/biken1.png"
-                  alt="First slide">
-              </div>
-              <!--/First slide-->
-              <!--Second slide-->
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/biken2.png"
-                  alt="Second slide">
-              </div>
-              <!--/Second slide-->
-              <!--3rd slide-->
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/biken3.png"
-                  alt="Second slide">
-              </div>
-              <!--/3rd slide-->
-              <!--4th slide-->
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/biken4.png"
-                  alt="Second slide">
-              </div>
-              <!--/4th slide-->
-              <!--5th slide-->
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/biken5.png"
-                  alt="Second slide">
-              </div>
-              <!--/5th slide-->
-            </div>
-            <!--/.Slides-->
-            <!--Controls-->
-            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <!--/.Controls-->
-          </div>
-          <!--/.Carousel Wrapper-->
-          </a>
-
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://bikenapp.com/"  target="_blank">Biken Web <i class="star fa fa-star"></i> </a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">Personal project</h6>
-            <p class="card-text">I've decided to push a school project (Biken) a bit further and continue on my own to have a web
-            version of the project. I did that to learn how to deploy web-based application and I learned a lot about how to create a
-            reliable client-server application. I also learned about web hosting, server configuration, domain name and DNS. You can check
-            the project here : <a href="https://bikenapp.com/" target="_blank" class="underline">bikenapp.com</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <a href="https://www.youtube.com/watch?v=seBOBeAjZv8"  target="_blank"><img class="card-img-top" src="img/biken.png" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://www.youtube.com/watch?v=seBOBeAjZv8"  target="_blank">Biken Software</a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted target="_blank"">School project</h6>
-            <p class="card-text">During our 3rd year at ENIB, I developed with friends a software to generate
-              random bike routes in France. This software uses a pathfinding algorithm to create the best appropriate path.
-               You can choose the distance you want to travel or you can simply define a starting point and a destination
-               point. This use the OpenStreetMap data. You can check
-               the project demo on <a href="https://www.youtube.com/watch?v=seBOBeAjZv8" target="_blank" class="underline">YouTube</a>.</p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products"  target="_blank"><img class="card-img-top" src="img/shopshelf.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products"  target="_blank">ShopShelf</a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">Interview project</h6>
-            <p class="card-text">I did a little e-commerce store with Angular. The purpose of this project is just
-               to show an example of a small application I can build. I've added a shopping cart with persistent data even
-               without being connected to an account and login system. This project is hosted <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products" target="_blank" class="underline">here</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <a><img class="card-img-top" src="img/spoty.png" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="">Spoty</a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">Ocean Hackathon Brest 2019</h6>
-            <p class="card-text">We made a prototype of a web application for ranking and recommending
-               kitesurf and windsurf spots. I worked on obtaining data with different free APIs and datasets made
-               available by the companies for the event.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row white-t">
-      <div class="col-md-12 my-4 col-lg-12 text-center">
-        <h4>My electronics and embedded systems projects</h4>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <a><img class="card-img-top" src="img/sensornetwork.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a>Sensor network</a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">School project</h6>
-            <p class="card-text">In this project I had to learn how the CAN, I2C and SPI buses
-              worked since all three protocols were used in the different sensors. I had to manage
-               the transmission of information from 5 sensors (brightness, proximity, wind speed,
-               humidity and gyroscope) simultaneously via a single CAN bus and display the data in
-               real time on an interface.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <!-- <a><img class="card-img-top" src="img/motor1.jpg" alt=""></a> -->
-
-          <!--Carousel Wrapper-->
-          <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-            </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-              <!--First slide-->
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="img/motor1.jpg"
-                  alt="First slide">
-              </div>
-              <!--/First slide-->
-              <!--Second slide-->
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/motor2.jpg"
-                  alt="Second slide">
-              </div>
-              <!--/Second slide-->
-            </div>
-            <!--/.Slides-->
-            <!--Controls-->
-            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <!--/.Controls-->
-          </div>
-          <!--/.Carousel Wrapper-->
-
-
-          <div class="card-body">
-            <h4 class="card-title">
-              <a>Motor control</a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">School project</h6>
-            <p class="card-text">During my 4th year, we had to realize the
-              servo-control of a synchronous motor with a vector control. During this
-              project I learned how to build PID controller and create command interfaces
-              using Qt. The informations were transmitted from the computer to the STM32-Nucleo
-              microcontroller via Zigbee.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 mb-4">
-        <div class="card h-100">
-          <a><img class="card-img-top" src="img/robot.jpg" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a>Robot</a>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">School project</h6>
-            <p class="card-text">In this project we had to code the robot. We were using a real-time operating system.
-              The goal of the project was to distribute the different tasks and to manage the priorities in the interruptions
-              created by the different sensors. We also had
-              to create a control interface and a tracking of a person via image/color recognition by the camera.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-</section>
-
-
-
-
-
-  <!-- Footer -->
-  <footer id="footer" class="page-footer font-small unique-color-dark">
-      <!-- Footer Links -->
-      <div class="text-center text-md-left py-4 dark-t">
-
-        <!-- Grid row -->
-        <div class="row mt-3">
-
-          <!-- Grid column -->
-          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto">
-
-            <!-- Content -->
-            <h6 class="text-uppercase font-weight-bold">Info</h6>
-            <hr class="accent-2 d-inline-block mx-auto dark " style="width: 40px;">
-            <p >I'm a student in engineering school. I'm currently looking for an end of studies internship of 5 to 6 month starting from March 2021</p>
-
-          </div>
-
-          <!-- Grid column -->
-          <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center">
-
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold text-center mb-4">Download my Resume</h6>
-            <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="download-button downloadButtonTrack"><i class="fa fa-download mr-2"></i>Download</a>
-            <!-- </div> -->
-
-            <div class="row my-4 justify-content-center">
-              <div class="col-12 pt-4 dark-t text-center">
-                      <!--LinkedIn-->
-                      <a class="li-ic" href="https://www.linkedin.com/in/QuentinPhilipp">
-                        <i class="fa fa-linkedin dark-t icon-social"> </i>
-                      </a>
-                      <!--Github-->
-                      <a class="git-ic" href="https://github.com/QuentinPhilipp/">
-                        <i class="fa fa-github mx-4 dark-t icon-social"> </i>
-                      </a>
-                      <!--Gitlab -->
-                      <a class="tw-ic" href="https://gitlab.com/QuentinPhilipp">
-                        <i class="fa fa-gitlab dark-t icon-social"> </i>
-                      </a>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-desktop fa-stack-1x icon-skill"></i>
+                    </span>
+                    <div class="details">
+                        <h3 class="skill-label">Electronics</h3>
+                        <p class="skill-desc">Prototyping, simulations, designing, testing</p>
+                    </div>
                 </div>
             </div>
           </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="py-4 text-center">
+            <button class="btn-filter all active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn-filter software" onclick="filterSelection('software')"> Software</button>
+            <button class="btn-filter electronics" onclick="filterSelection('electronics')"> Electronics</button>
+        </div>
 
-          <!-- Grid column -->
-          <div id="contact" class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="col-lg-6 mb-4 filtered software">
+                <div class="card h-100">
+                  <a href="https://bikenapp.com/" target="_blank">
+        
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-1z" data-slide-to="0" class="indicators active"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="1" class="indicators"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="2" class="indicators"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="3" class="indicators"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="4" class="indicators"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                      <!--First slide-->
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/projects/biken1.png"
+                          alt="First slide">
+                      </div>
+                      <!--/First slide-->
+                      <!--Second slide-->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projects/biken2.png"
+                          alt="Second slide">
+                      </div>
+                      <!--/Second slide-->
+                      <!--3rd slide-->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projects/biken3.png"
+                          alt="Second slide">
+                      </div>
+                      <!--/3rd slide-->
+                      <!--4th slide-->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projects/biken4.png"
+                          alt="Second slide">
+                      </div>
+                      <!--/4th slide-->
+                      <!--5th slide-->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projects/biken5.png"
+                          alt="Second slide">
+                      </div>
+                      <!--/5th slide-->
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                  </div>
+                  <!--/.Carousel Wrapper-->
+                  </a>
+        
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="https://bikenapp.com/"  target="_blank">Biken Web <i class="star fa fa-star"></i> </a>
+                    </h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Personal project</h6>
+                    <p class="card-text">I've decided to push a school project (Biken) a bit further and continue on my own to have a web
+                    version of the project. I did that to learn how to deploy web-based application and I learned a lot about how to create a
+                    reliable client-server application. I also learned about web hosting, server configuration, domain name and DNS. You can check
+                    the project here : <a href="https://bikenapp.com/" target="_blank" class="underline">bikenapp.com</a>.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4 filtered software">
+                <div class="card h-100">
+                  <a href="https://www.youtube.com/watch?v=seBOBeAjZv8"  target="_blank"><img class="card-img-top" src="img/projects/biken.png" alt=""></a>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="https://www.youtube.com/watch?v=seBOBeAjZv8"  target="_blank">Biken Software</a>
+                    </h4>
+                    <h6 class="card-subtitle mb-2 text-muted target="_blank"">School project</h6>
+                    <p class="card-text">During our 3rd year at ENIB, I developed with friends a software to generate
+                      random bike routes in France. This software uses a pathfinding algorithm to create the best appropriate path.
+                       You can choose the distance you want to travel or you can simply define a starting point and a destination
+                       point. This use the OpenStreetMap data. You can check
+                       the project demo on <a href="https://www.youtube.com/watch?v=seBOBeAjZv8" target="_blank" class="underline">YouTube</a>.</p></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4 filtered software">
+            <div class="card h-100">
+                <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products"  target="_blank"><img class="card-img-top" src="img/projects/shopshelf.jpg" alt=""></a>
+                <div class="card-body">
+                <h4 class="card-title">
+                    <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products"  target="_blank">ShopShelf</a>
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">Interview project</h6>
+                <p class="card-text">I did a little e-commerce store with Angular. The purpose of this project is just
+                    to show an example of a small application I can build. I've added a shopping cart with persistent data even
+                    without being connected to an account and login system. This project is hosted <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products" target="_blank" class="underline">here</a>.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-4 filtered software">
+            <div class="card h-100">
+                <a><img class="card-img-top" src="img/projects/spoty.png" alt=""></a>
+                <div class="card-body">
+                <h4 class="card-title">
+                    <a href="">Spoty</a>
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">Ocean Hackathon Brest 2019</h6>
+                <p class="card-text">We made a prototype of a web application for ranking and recommending
+                    kitesurf and windsurf spots. I worked on obtaining data with different free APIs and datasets made
+                    available by the companies for the event.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-4 filtered electronics">
+            <div class="card h-100">
+                <a><img class="card-img-top" src="img/projects/sensornetwork.jpg" alt=""></a>
+                <div class="card-body">
+                <h4 class="card-title">
+                    <a>Sensor network</a>
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">School project</h6>
+                <p class="card-text">In this project I had to learn how the CAN, I2C and SPI buses
+                    worked since all three protocols were used in the different sensors. I had to manage
+                    the transmission of information from 5 sensors (brightness, proximity, wind speed,
+                    humidity and gyroscope) simultaneously via a single CAN bus and display the data in
+                    real time on an interface.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-4 filtered electronics">
+            <div class="card h-100">
+                <!-- <a><img class="card-img-top" src="img/motor1.jpg" alt=""></a> -->
+    
+                <!--Carousel Wrapper-->
+                <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/projects/motor1.jpg"
+                        alt="First slide">
+                    </div>
+                    <!--/First slide-->
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="img/projects/motor2.jpg"
+                        alt="Second slide">
+                    </div>
+                    <!--/Second slide-->
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+    
+    
+                <div class="card-body">
+                <h4 class="card-title">
+                    <a>Motor control</a>
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">School project</h6>
+                <p class="card-text">During my 4th year, we had to realize the
+                    servo-control of a synchronous motor with a vector control. During this
+                    project I learned how to build PID controller and create command interfaces
+                    using Qt. The informations were transmitted from the computer to the STM32-Nucleo
+                    microcontroller via Zigbee.</p>
+                </div>
+            </div>
+            </div>  
+            <div class="col-lg-6 mb-4 filtered electronics">
+            <div class="card h-100">
+                <a><img class="card-img-top" src="img/projects/robot.jpg" alt=""></a>
+                <div class="card-body">
+                <h4 class="card-title">
+                    <a>Robot</a>
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">School project</h6>
+                <p class="card-text">In this project we had to code the robot. We were using a real-time operating system.
+                    The goal of the project was to distribute the different tasks and to manage the priorities in the interruptions
+                    created by the different sensors. We also had
+                    to create a control interface and a tracking of a person via image/color recognition by the camera.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <!-- Footer -->
+        <footer id="footer" class="page-footer font-small unique-color-dark">
+            <!-- Footer Links -->
+            <div class="text-center text-md-left py-4">
 
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Contact</h6>
-            <hr class="accent-2 d-inline-block mx-auto dark" style="width: 75px;">
-            <p>
-              <i class=" fa fa-home mr-3"></i>Lemberg, 6 rue saint Hubert, France</p>
-            <p>
-              <i class=" fa fa-envelope mr-3"></i>quentin.philipp@hotmail.fr</p>
-            <p>
-              <i class=" fa fa-phone mr-3"></i>(+33) 7.89.84.15.87</p>
+            <!-- Grid row -->
+            <div class="row mt-3">
 
-          </div>
-          <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div id="contact" class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+                    <hr class="accent-2 d-inline-block mx-auto" style="width: 75px;">
+                    <ul class="no-style">
+                        <li><i class=" fa fa-github"></i><a class="no-style" target="_blank" href="https://github.com/QuentinPhilipp/"> Github</li>
+                        <li><i class=" fa fa-linkedin"></i><a class="no-style" target="_blank" href="https://www.linkedin.com/in/QuentinPhilipp"> LinkedIn</li>
+                    </ul>
+                    </div>
+
+                <!-- Grid column -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold text-center mb-4">Download my Resume</h6>
+                <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="download-button downloadButtonTrack"><i class="fa fa-download mr-2"></i>Download</a>
+                <!-- </div> -->
+                </div>
+
+                <!-- Grid column -->
+                <div id="contact" class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="accent-2 d-inline-block mx-auto" style="width: 75px;">
+                <p>
+                    <i class=" fa fa-home mr-3"></i>Lyon, France</p>
+                <p>
+                    <i class=" fa fa-envelope mr-3"></i>quentin.philipp@hotmail.fr</p>
+                <p>
+                    <i class=" fa fa-phone mr-3"></i>(+33) 7.89.84.15.87</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
 
         </div>
-        <!-- Grid row -->
+        </footer>
+        <!-- Footer -->
+    </section>
 
-      </div>
-      <!-- Footer Links -->
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
 
-    </div>
-  </footer>
-  <!-- Footer -->
+    
 
-  <!-- JS Scripts -->
-  <script type="text/javascript" src="js/jquery.fittext.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 </body>
-
-
 </html>
