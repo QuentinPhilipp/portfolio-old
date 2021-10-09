@@ -1,0 +1,24 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@700&family=Oswald&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+#contacts {
+  background-color: rgb(231, 231, 231)
+}
+
+#experiences {
+  padding: 50px;
+}
+
+#skills {
+  padding: 50px;
+  background-image: url("../img/particle-bg.png") ;
+  background-attachment: fixed;
+}
+
+#projects {
+  padding: 50px;
+}

@@ -1,0 +1,22 @@
+
+/* Style the buttons */
+.btn-filter {
+  border: none;
+  margin: 5px;
+  outline: none;
+  padding: 5px 10px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* Add a grey background color on mouse-over */
+.btn-filter:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn-filter.active {
+  background-color: #666;
+    color: white;
+}
