@@ -61,12 +61,13 @@
  .timeline .timeline-container .timeline-body .timeline-title {
 	 margin-bottom: 1.4rem;
 }
- .timeline .timeline-container .timeline-body .timeline-title .badge {
+ .timeline .timeline-container .timeline-body .timeline-title .badge-line {
 	 background: #212529;
 	 padding: 4px 8px;
 	 border-radius: 3px;
 	 font-size: 12px;
 	 font-weight: bold;
+	 display: inline-block;
 }
  .timeline .timeline-container .timeline-body .timeline-subtitle {
 	 font-weight: 300;
@@ -75,19 +76,19 @@
 	 margin-top: 16px;
 	 font-size: 11px;
 }
- .timeline .timeline-container.primary .badge, .timeline .timeline-container.primary .timeline-icon {
+ .timeline .timeline-container.primary .badge-line, .timeline .timeline-container.primary .timeline-icon {
 	 background: #1d8cf8 !important;
 }
- .timeline .timeline-container.info .badge, .timeline .timeline-container.info .timeline-icon {
+ .timeline .timeline-container.info .badge-line, .timeline .timeline-container.info .timeline-icon {
 	 background: #11cdef !important;
 }
- .timeline .timeline-container.success .badge, .timeline .timeline-container.success .timeline-icon {
+ .timeline .timeline-container.success .badge-line, .timeline .timeline-container.success .timeline-icon {
 	 background: #00bf9a !important;
 }
- .timeline .timeline-container.warning .badge, .timeline .timeline-container.warning .timeline-icon {
+ .timeline .timeline-container.warning .badge-line, .timeline .timeline-container.warning .timeline-icon {
 	 background: #ff8d72 !important;
 }
- .timeline .timeline-container.danger .badge, .timeline .timeline-container.danger .timeline-icon {
+ .timeline .timeline-container.danger .badge-line, .timeline .timeline-container.danger .timeline-icon {
 	 background: #BD3147 !important;
 }
  
