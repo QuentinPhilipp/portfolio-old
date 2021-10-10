@@ -20,15 +20,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section>
+    <section id="header">
         <header>
             <div class="topnav" id="topnavResp">
-                <a class="strikeOnHover" href="#about">About</a>
-                <a class="strikeOnHover" href="#experiences">Experiences</a>
-                <a class="strikeOnHover" href="#skills">Skills</a>
-                <a class="strikeOnHover" href="#projects">Projects</a>
-                <a class="strikeOnHover" href="#contacts">Contacts</a>
+                <a lang="en" class="strikeOnHover" onClick="goToAbout()" href="#">About</a>
+                <a lang="en" class="strikeOnHover" onClick="goToExperiences()" href="#">Experiences</a>
+                <a lang="en" class="strikeOnHover" onClick="goToSkills()" href="#">Skills</a>
+                <a lang="en" class="strikeOnHover" onClick="goToProjects()" href="#">Projects</a>
+                <a lang="fr" class="strikeOnHover" onClick="goToAbout()" href="#">A propos</a>
+                <a lang="fr" class="strikeOnHover" onClick="goToExperiences()" href="#">Expériences</a>
+                <a lang="fr" class="strikeOnHover" onClick="goToSkills()" href="#">Compétences</a>
+                <a lang="fr" class="strikeOnHover" onClick="goToProjects()" href="#">Projets</a>
+                <a class="strikeOnHover" onClick="goToContacts()" href="#contacts">Contacts</a>
                 <a class="strikeOnHover" id="switch-lang">FR/EN</a>
+                <a id="go-top" style="color: white; display: none" onClick="goToTop()"><i class="fa fa-arrow-up fa-lg"></i></a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -40,7 +45,7 @@
                 <h3 lang="en">I'm a French <span>engineer</span>, passionated about <span>development</span> and <span>embedded systems.</span>
                     Scroll to learn more <a class="smoothscroll" href="#about">about me</a>.
                 </h3>
-                <h3 lang="fr" >Je suis un <span>ingénieur</span> passionné de <span>developpement</span> et de <span>systemes embarqués.</span>
+                <h3 lang="fr" >Je suis un <span>ingénieur</span> passionné de <span>développement</span> et de <span>systèmes embarqués.</span>
                     Scrollez pour découvrir <a class="smoothscroll" href="#about">mon profil</a>.
                 </h3>
                 <hr />
@@ -62,10 +67,11 @@
                 <h2 lang="en">About Me</h2>
                 <p lang="en">I am an french engineer working on software development and embedded systems.
                     I have different experiences, academic and professional,
-                    in these two fields. I am motivated by the creation and improvement of innovative systems.
+                    in these two fields. I am motivated by the creation and improvement of innovative projects.
                 <h2 lang="fr">A propos</h2>
                 <p lang="fr">Je suis ingénieur spécialisé dans le dévelopement logiciel et systemes embarqués.
-                    J'ai de l'expérience dans ces domaines grâce des projets personels, scolaires et professionels.                    
+                    J'ai de l'expérience dans ces domaines grâce des projets personels, scolaires et professionels. 
+                    Je suis motivé par la création et l'amélioration de projets innovants.                   
                 </p>
                 <div class="row pt-4">
                     <div class="col-md-6 col-sm-12">
@@ -80,10 +86,10 @@
                     </div>
                     <div class="col-md-6 col-sm-12 download">
                     <p lang="en">
-                        <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="button downloadButtonTrack"><i class="fa fa-download"></i>Download Resume</a>
+                        <a href="img/QuentinPhilippResumeEN.pdf" target="_blank" download="QuentinPhilipp Resume" class="button downloadButtonTrack"><i class="fa fa-download"></i>Download Resume</a>
                     </p>
                     <p lang="fr">
-                        <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="button downloadButtonTrack"><i class="fa fa-download"></i>Télécharger mon CV</a>
+                        <a href="img/QuentinPhilippResumeFR.pdf" target="_blank" download="QuentinPhilipp CV" class="button downloadButtonTrack"><i class="fa fa-download"></i>Téléchargez mon CV</a>
                     </p>
                     </div>
                     <!-- <div class="columns download">
@@ -117,7 +123,7 @@
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Siemens Digital Industries Software, Lyon</span></h4>
-                                <p>Ingénisateur logiciel pour System Analyst. Un logiciel développé sur Python/Qt utilisé pour des simulations industrielles.</p>
+                                <p>Ingénieur logiciel pour System Analyst. Un logiciel développé sur Python/Qt utilisé pour des simulations industrielles.</p>
                                 <p class="timeline-subtitle">Septembre 2021 - Maintenant</p>
                             </div>
                         </div>
@@ -127,12 +133,16 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Siemens Digital Industries Software, Lyon (FR)</span> <span class="badge-line">Internship</span> </h4>
-                                <p>Development of a user interface with Qt to simplify the creation of simulation model in Qt. Creation of a reusable graphic library to build a sketcher</p>
+                                <p>- Conception of a sketcher to improve and simplify the use of some fonctionalities in System Analyst, a software for industrial simulation.<br>
+                                   - Programming a software using Python and Qt.<br>
+                                   - Creation of a generic graphical library usable for other projects across Siemens development team.</p>
                                 <p class="timeline-subtitle">March 2021 - August 2021</p>
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Siemens Digital Industries Software, Lyon</span> <span class="badge-line">Stage</span> </h4>
-                                <p>Developpement d'une interface graphique avec Qt pour simplifier la création de modèle de simulation dans System Analyst.</p>
+                                <p>- Conception d'un sketcher pour améliorer et faciliter l'utilisation de fonctionnalités dans le logiciel System Analyst.<br>
+                                    - Développement logiciel en Python avec Qt.<br>
+                                    - Création d'une librairie graphique générique utilisable pour d'autres projets de l'équipe.</p>
                                 <p class="timeline-subtitle">Mars 2021 - Aout 2021</p>
                             </div>
                         </div>
@@ -142,12 +152,16 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">INTK, Utrecht (NL)</span> <span class="badge-line">Internship</span> </h4>
-                                <p>Developping project of dashboards for cultural organisations to check their traffic and influence online. I worked with a lot of social media API and needed to aggregate all the data in a understandable interface.</p>
+                                <p>- Creation of a dashboard for data provided by social networks API (Facebook, Twitter, Instagram, ... ) and auto generation of statistics reports for our customers.<br>
+                                    - I improved my skills in project management and communication with clients.<br>
+                                   - Optimisation and improvement of existing code for weekly release to customers.</p>
                                 <p class="timeline-subtitle">March 2020 - June 2020</p>
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">INTK, Utrecht (NL)</span> <span class="badge-line">Stage</span> </h4>
-                                <p>Developpement d'une solution web en Javascript pour la génération de dashboards et de rapport sur des statistiques provenant de réseaux sociaux et de sites web pour des organisations culturelles.</p>
+                                <p>- Création de tableaux de bord pour des données provenant de différentes API de réseaux sociaux. (Facebook, Twitter, Instagram, ... )<br>
+                                   - Amélioration de mes compétences en gestion de projets et communication.<br>
+                                   - Optimisation et amélioration du code existant pour une livraison aux clients.</p>
                                 <p class="timeline-subtitle">Mars 2020 - Juin 2020</p>
                             </div>
                         </div>
@@ -157,12 +171,12 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Magic Tech, Lyon (FR)</span></h4>
-                                <p>After my internship of 2 months, I stayed to work in the company for 1 month before returning to school.</p>
+                                <p>After my internship of 2 months, I worked as an employee for 1 month to continue the project before returning to my school.</p>
                                 <p class="timeline-subtitle">August 2019</p>
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Magic Tech, Lyon</span></h4>
-                                <p>Après mon stage de 2 mois, je suis resté en CDD 1 mois avant de retourner à l'école.</p>
+                                <p>Après mon stage de 2 mois, prolongation en CDD pendant 1 mois, avant de continuer ma formation.</p>
                                 <p class="timeline-subtitle">Aout 2019</p>
                             </div>
                         </div>
@@ -172,12 +186,14 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Magic Tech, Lyon (FR)</span> <span class="badge-line">Internship</span></h4>
-                                <p>Conception and programmation of embedded systems on Arduino and Raspberry Pi. I worked with all the steps of conceptions including CAD, 3D priting, electronic circuit design, soldering, programming, ...</p>
+                                <p>Conception and programation of multiple microcontroller to retrieve data from sensors in real-time and control motor/lights/sounds based on the sensors. <br>
+                                I worked with all the steps of product conceptions including CAD, 3D priting, electronic circuit design, soldering, programming, ...</p>
                                 <p class="timeline-subtitle">June 2019 - July 2019</p>
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Magic Tech, Lyon</span> <span class="badge-line">Stage</span></h4>
-                                <p>Conception et programmation de systeme embarqué sur Arduino et Raspberry Pi. J'ai travaillé sur toute les étapes de la conceptions des produits, CAO, impression 3D, conception éléctronique, soudure, assemblage et programmation</p>
+                                <p>Conception et programmation de multiple cartes électroniques chargé de récupérer des données et déclencher des actionneurs.<br>
+                                    J'ai travaillé sur toute les étapes de la conceptions des produits, CAO, impression 3D, conception éléctronique, soudure, assemblage et programmation</p>
                                 <p class="timeline-subtitle">Juin 2019 - Juillet 2019</p>
                             </div>
                         </div>
@@ -192,9 +208,8 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">ENIB Engineering School, Brest (FR)</span></h4>
-                                <p>I learned software design and development, embedded systems, artificial intelligence and web programming through various projects. 
-                                    Team work and management were part of many of these projects, which is something I love. I studied general engineering (mechanical engineering, 
-                                    electronics and computer science).</p>
+                                <p>I studied general engineering, I learned computer science, embedded systems, and mechanic. Thanks to all the projects I have done, in school or personal projects,
+                                    I learned how to work with a team. The last two years I specialized myself in software development and embedded systems.</p>
                                 <p class="timeline-subtitle">2016 - 2021</p>
                             </div>
                             <div lang="fr" class="timeline-body">
@@ -217,19 +232,19 @@
                                     - IA (pattern recognition, machine learning, data mining, data science)<br>
                                     - Microelectronics (Conception and study of electronic circuit)<br>
                                     - Networking (Network configuration, encryption, protocols, analysis of HTTP packets)<br>
-                                    - Circuit Analysis and optimisation (Studying the way an electronic circuit simulator works and circuit optimisation for different tasks)<br>
+                                    - Circuit Analysis and optimisation (Studying the way an electronic circuit simulator works and circuits optimisation for different tasks)<br>
                                 </p>
                                 <p class="timeline-subtitle">September 2020 - February 2021</p>
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Faculty of Electrical Engineering, University of Ljubjlana (SL)</span> <span class="badge-line">Erasmus</span></h4>
                                 <p>Lors de mon dernier semestre à l'ENIB, j'ai effectué un échange Erasmus pour pouvoir découvrir un autre pays et une nouvelle université. J'ai 
-                                    donc pû suivre des cours différents de ceux proposé à mon école pour approfondir certains domaines.<br>
-                                    - Autonomous mobile systems (Programmation de robot, algorithme de calculs d'itinéraire, reconnaisance d'objets)<br>
+                                    donc pû suivre des cours différents de ceux proposés à mon école pour approfondir certains domaines.<br>
+                                    - Autonomous mobile systems (Programmation de robot, algorithme de calculs d'itinéraires, reconnaisance d'objets)<br>
                                     - IA (reconnaisance d'image, machine learning, data mining, data science)<br>
-                                    - Microelectronics (Conception et étude de circuit éléctronique)<br>
+                                    - Microelectronics (Conception et étude de circuits éléctroniques)<br>
                                     - Networking (Configuration de réseaux, chiffrement, protocoles de communication, analyses de trames HTTP)<br>
-                                    - Circuit Analysis and optimisation (Etude du fonctionnement d'un simulateur éléctronique et optimisation de circuit)<br>
+                                    - Circuit Analysis and optimisation (Etude du fonctionnement d'un simulateur électronique et optimisation de circuits)<br>
                                 </p>
                                 <p class="timeline-subtitle">Septembre 2020 - Février 2021</p>
                             </div>
@@ -296,13 +311,21 @@
     </section>
     <section id="projects">
         <div class="container">
-        <h2 class="text-center">Projects</h2>
-        <div class="py-4 text-center">
-            <button class="btn-filter all active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn-filter software" onclick="filterSelection('software')"> Software</button>
-            <button class="btn-filter electronics" onclick="filterSelection('electronics')"> Electronics</button>
+        <h2 lang="en" class="text-center">Projects</h2>
+        <h2 lang="fr" class="text-center">Projets</h2>
+        <div lang="en" class="py-4 text-center">
+            <button class="btn-filter all active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn-filter software" onclick="filterSelection('software')">Software</button>
+            <!-- <button class="btn-filter personal" onclick="filterSelection('personal')">Personal project</button>
+            <button class="btn-filter school" onclick="filterSelection('school')">School project</button>
+            <button class="btn-filter professional" onclick="filterSelection('professional')">Professional</button> -->
+            <button class="btn-filter electronics" onclick="filterSelection('electronics')">Electronics</button>
         </div>
-
+        <div lang="fr" class="py-4 text-center">
+            <button class="btn-filter all active" onclick="filterSelection('all')">Tout</button>
+            <button class="btn-filter software" onclick="filterSelection('software')">Logiciel</button>
+            <button class="btn-filter electronics" onclick="filterSelection('electronics')">Electronique</button>
+        </div>
         <!-- Portfolio Gallery Grid -->
         <div class="row">
             <div class="col-lg-6 mb-4 filtered software">
@@ -372,14 +395,79 @@
                     <h4 class="card-title">
                       <a href="https://bikenapp.com/"  target="_blank">Biken Web <i class="star fa fa-star"></i> </a>
                     </h4>
-                    <h6 class="card-subtitle mb-2 text-muted">Personal project</h6>
-                    <p class="card-text">I've decided to push a school project (Biken) a bit further and continue on my own to have a web
+                    <h6 lang="en" class="card-subtitle mb-2 text-muted">Personal project</h6>
+                    <h6 lang="fr" class="card-subtitle mb-2 text-muted">Projet personnel</h6>
+                    <p lang="en" class="card-text">I've decided to push a school project (Biken) a bit further and continue on my own to have a web
                     version of the project. I did that to learn how to deploy web-based application and I learned a lot about how to create a
                     reliable client-server application. I also learned about web hosting, server configuration, domain name and DNS. You can check
                     the project here : <a href="https://bikenapp.com/" target="_blank" class="underline">bikenapp.com</a>.</p>
+                    <p lang="fr" class="card-text">J'ai décidé de continuer un projet scolaire (Biken) tout seul pour le transformer en application web. 
+                    J'ai appris à déployer une application web, construire un projet comportant un serveur et un client, utiliser des API externes et des services de login.
+                    J'ai aussi dû apprendre à gérer l'hébergement d'un site internet, configurer un serveur, etc... Vous pouvez voir l'avancement du projet ici: 
+                    <a href="https://bikenapp.com/" target="_blank" class="underline">bikenapp.com</a>.</p>
                   </div>
                 </div>
             </div>
+            <div class="col-lg-6 mb-4 filtered electronics">
+                <div class="card h-100">
+                    <!-- <a><img class="card-img-top" src="img/motor1.jpg" alt=""></a> -->
+        
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/projects/motor1.jpg"
+                            alt="First slide">
+                        </div>
+                        <!--/First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projects/motor2.jpg"
+                            alt="Second slide">
+                        </div>
+                        <!--/Second slide-->
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                    </div>
+                    <!--/.Carousel Wrapper-->
+        
+        
+                    <div class="card-body">
+                    <h4 class="card-title">
+                        <a lang="en">Motor control</a>
+                        <a lang="fr">Contrôle de moteur</a>
+                    </h4>
+                    <h6 class="card-subtitle mb-2 text-muted">School project</h6>
+                    <p lang="en" class="card-text">During my 4th year, we had to realize the
+                        servo-control of a synchronous motor with a vector control. During this
+                        project I learned how to build PID controller and create command interfaces
+                        using Qt. The informations were transmitted from the computer to the STM32-Nucleo
+                        microcontroller via Zigbee.</p>
+                    <p lang="fr" class="card-text">Pendant ma 4eme année à l'ENIB, j'ai dû réaliser le contrôle
+                        d'un moteur synchrone avec des commandes vectorielles. Dans ce projet, j'ai développé mes connaisances en régulateur 
+                        PID et créer des interfaces de commandes avec Qt. Les données était transférées entre l'ordinateur et un 
+                        microcontrolleur STM32-Nucleo avec Zigbee.</p>
+                    </div>
+                </div>
+            </div>  
             <div class="col-lg-6 mb-4 filtered software">
                 <div class="card h-100">
                   <a href="https://www.youtube.com/watch?v=seBOBeAjZv8"  target="_blank"><img class="card-img-top" src="img/projects/biken.png" alt=""></a>
@@ -387,13 +475,40 @@
                     <h4 class="card-title">
                       <a href="https://www.youtube.com/watch?v=seBOBeAjZv8"  target="_blank">Biken Software</a>
                     </h4>
-                    <h6 class="card-subtitle mb-2 text-muted target="_blank"">School project</h6>
-                    <p class="card-text">During our 3rd year at ENIB, I developed with friends a software to generate
-                      random bike routes in France. This software uses a pathfinding algorithm to create the best appropriate path.
+                    <h6 lang="en" class="card-subtitle mb-2 text-muted">School project</h6>
+                    <h6 lang="fr" class="card-subtitle mb-2 text-muted">Projet scolaire</h6>
+                    <p lang="en" class="card-text">During our 3rd year at ENIB, I developed with friends a software to generate
+                      random bike routes in France. This software uses a pathfinding algorithm (A*) to create the best appropriate path.
                        You can choose the distance you want to travel or you can simply define a starting point and a destination
                        point. This use the OpenStreetMap data. You can check
-                       the project demo on <a href="https://www.youtube.com/watch?v=seBOBeAjZv8" target="_blank" class="underline">YouTube</a>.</p></p>
+                       the project demo on <a href="https://www.youtube.com/watch?v=seBOBeAjZv8" target="_blank" class="underline">YouTube</a>.</p>                   
+                    <p lang="fr" class="card-text">Pendant ma 3eme année à l'ENIB, j'ai développé avec des amis un logiciel pour générer
+                      des itinéraires de vélo en France. Ce logiciel utilise un algorithme de recherche de chemin (A*) pour déterminer le chemin le plus approprié.
+                       L'utilisateur peut choisir la distance souhaitée ou simplement un point de départ et d'arrivée et le logiciel construit l'itinéraire.
+                       Ce projet utilise les données Open source de OpenStreetMap. Vous pouvez voir une démonstration du projet sur 
+                        <a href="https://www.youtube.com/watch?v=seBOBeAjZv8" target="_blank" class="underline">YouTube</a>.</p>
                   </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4 filtered electronics">
+                <div class="card h-100">
+                    <a><img class="card-img-top" src="img/projects/robot.jpg" alt=""></a>
+                    <div class="card-body">
+                    <h4 class="card-title">
+                        <a lang="en">Robot programming</a>
+                        <a lang="fr">Programmation de robot</a>
+                    </h4>
+                    <h6 lang="en" class="card-subtitle mb-2 text-muted">School project</h6>
+                    <h6 lang="fr" class="card-subtitle mb-2 text-muted">Projet scolaire</h6>
+                    <p lang="en" class="card-text">In this project we had to code the robot. We were using a real-time operating system.
+                        The goal of the project was to distribute the different tasks and to manage the priorities in the interruptions
+                        created by the different sensors. We also had
+                        to create a control interface and a tracking of a person via image/color recognition by the camera.</p>
+                    <p lang="fr" class="card-text">Dans ce projet, j'ai dû coder un robot controllé par une carte STM32. Nous avons utilisé 
+                        un système d'exploitation temps-réel RTOS. Le but du projet était de répartir les tâches et de gérer les interruptions physiques
+                    pour traiter les informations en temps réel. J'ai développé une interface de contrôle pour diriger le robot depuis un clavier et 
+                    utilisé des algorithmes de reconnaisance d'image pour permettre au robot de suivre une personne ou une couleur particulière.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 mb-4 filtered software">
@@ -403,10 +518,13 @@
                 <h4 class="card-title">
                     <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products"  target="_blank">ShopShelf</a>
                 </h4>
-                <h6 class="card-subtitle mb-2 text-muted">Interview project</h6>
-                <p class="card-text">I did a little e-commerce store with Angular. The purpose of this project is just
+                <h6 lang="en" class="card-subtitle mb-2 text-muted">Interview project</h6>
+                <h6 lang="fr" class="card-subtitle mb-2 text-muted">Project d'entretien</h6>
+                <p lang="en" class="card-text">I did a little e-commerce store with Angular. The purpose of this project is just
                     to show an example of a small application I can build. I've added a shopping cart with persistent data even
                     without being connected to an account and login system. This project is hosted <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products" target="_blank" class="underline">here</a>.</p>
+                <p lang="fr" class="card-text">Ce projet avec Angular est un test réalisé pour un entretien de stage. Le but était de réaliser un site de E-commerce avec différents produits
+                    et un panier sauvegardé sans compte utilisateur ni systeme d'authentification. Ce project est hebergé <a href="https://angular-shop-demo-6f28b.firebaseapp.com/products" target="_blank" class="underline">ici</a>.</p>
                 </div>
             </div>
             </div>
@@ -418,9 +536,14 @@
                     <a href="">Spoty</a>
                 </h4>
                 <h6 class="card-subtitle mb-2 text-muted">Ocean Hackathon Brest 2019</h6>
-                <p class="card-text">We made a prototype of a web application for ranking and recommending
+                <p lang="en" class="card-text">We made a prototype of a web application for ranking and recommending
                     kitesurf and windsurf spots. I worked on obtaining data with different free APIs and datasets made
-                    available by the companies for the event.</p>
+                    available by the companies for the event.</p>                
+                <p lang="fr" class="card-text">Pour un hackathon nous avons réalisé un prototype pour classer et recommander 
+                    les spots de kitesurf et planches à voile en France grâce à des données météorologique et océanographique 
+                    mis à disposition par les partenaires de l'évenement. J'ai travaillé sur la récupération des données et le tri des
+                    jeux de données pour les transformer en données exploitables.
+                </p>
                 </div>
             </div>
             </div>
@@ -429,87 +552,24 @@
                 <a><img class="card-img-top" src="img/projects/sensornetwork.jpg" alt=""></a>
                 <div class="card-body">
                 <h4 class="card-title">
-                    <a>Sensor network</a>
+                    <a lang="en">Sensor network</a>
+                    <a lang="fr">Réseaux de capteur</a>
                 </h4>
-                <h6 class="card-subtitle mb-2 text-muted">School project</h6>
-                <p class="card-text">In this project I had to learn how the CAN, I2C and SPI buses
+                <h6 lang="en" class="card-subtitle mb-2 text-muted">School project</h6>
+                <h6 lang="fr" class="card-subtitle mb-2 text-muted">Projet scolaire</h6>
+                <p lang="en" class="card-text">In this project I had to learn how the CAN, I2C and SPI buses
                     worked since all three protocols were used in the different sensors. I had to manage
                     the transmission of information from 5 sensors (brightness, proximity, wind speed,
                     humidity and gyroscope) simultaneously via a single CAN bus and display the data in
                     real time on an interface.</p>
+                <p lang="fr" class="card-text">Ce projet consistait à connecter différents capteurs à un même reseau CAN et récuperer les données. 
+                    J'ai appris à utiliser les protocoles CAN, I2C et SPI car les capteurs utilisait différent protocoles.
+                    J'ai travaillé sur la transmission de l'information entre les 5 capteurs (luminosité, proximité, vitesse du vents, humidité et gyroscope)
+                    simultanément via un bus CAN et l'affichage des données sur une interface en temps réel.
+                    </p>
                 </div>
             </div>
-            </div>
-            <div class="col-lg-6 mb-4 filtered electronics">
-            <div class="card h-100">
-                <!-- <a><img class="card-img-top" src="img/motor1.jpg" alt=""></a> -->
-    
-                <!--Carousel Wrapper-->
-                <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                </ol>
-                <!--/.Indicators-->
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                    <!--First slide-->
-                    <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/projects/motor1.jpg"
-                        alt="First slide">
-                    </div>
-                    <!--/First slide-->
-                    <!--Second slide-->
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="img/projects/motor2.jpg"
-                        alt="Second slide">
-                    </div>
-                    <!--/Second slide-->
-                </div>
-                <!--/.Slides-->
-                <!--Controls-->
-                <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                <!--/.Controls-->
-                </div>
-                <!--/.Carousel Wrapper-->
-    
-    
-                <div class="card-body">
-                <h4 class="card-title">
-                    <a>Motor control</a>
-                </h4>
-                <h6 class="card-subtitle mb-2 text-muted">School project</h6>
-                <p class="card-text">During my 4th year, we had to realize the
-                    servo-control of a synchronous motor with a vector control. During this
-                    project I learned how to build PID controller and create command interfaces
-                    using Qt. The informations were transmitted from the computer to the STM32-Nucleo
-                    microcontroller via Zigbee.</p>
-                </div>
-            </div>
-            </div>  
-            <div class="col-lg-6 mb-4 filtered electronics">
-            <div class="card h-100">
-                <a><img class="card-img-top" src="img/projects/robot.jpg" alt=""></a>
-                <div class="card-body">
-                <h4 class="card-title">
-                    <a>Robot</a>
-                </h4>
-                <h6 class="card-subtitle mb-2 text-muted">School project</h6>
-                <p class="card-text">In this project we had to code the robot. We were using a real-time operating system.
-                    The goal of the project was to distribute the different tasks and to manage the priorities in the interruptions
-                    created by the different sensors. We also had
-                    to create a control interface and a tracking of a person via image/color recognition by the camera.</p>
-                </div>
-            </div>
-            </div>
+            </div>            
         </div>
     </section>
     <section id="contacts">
@@ -526,7 +586,8 @@
                 <div id="contact" class="col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto ">
 
                     <!-- Links -->
-                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+                    <h6 lang="en" class="text-uppercase font-weight-bold">Links</h6>
+                    <h6 lang="fr" class="text-uppercase font-weight-bold">Liens</h6>
                     <hr class="accent-2 d-inline-block mx-auto" style="width: 75px;">
                     <ul class="no-style">
                         <li><i class=" fa fa-github"></i><a class="no-style" target="_blank" href="https://github.com/QuentinPhilipp/"> Github</li>
@@ -538,8 +599,10 @@
                 <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mx-auto text-center">
 
                 <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold text-center mb-4">Download my Resume</h6>
-                <a href="img/QuentinPhilippResume.pdf" download="QuentinPhilipp Resume" class="download-button downloadButtonTrack"><i class="fa fa-download mr-2"></i>Download</a>
+                <h6 lang="en" class="text-uppercase font-weight-bold text-center mb-4">Download my Resume</h6>
+                <h6 lang="fr" class="text-uppercase font-weight-bold text-center mb-4">Téléchargez mon CV</h6>
+                <a lang="en" href="img/QuentinPhilippResumeEN.pdf" download="QuentinPhilipp Resume" class="download-button downloadButtonTrack"><i class="fa fa-download mr-2"></i>Download</a>
+                <a lang="fr" href="img/QuentinPhilippResumeFR.pdf" download="QuentinPhilipp CV" class="download-button downloadButtonTrack"><i class="fa fa-download mr-2"></i>Télécharger</a>
                 <!-- </div> -->
                 </div>
 
@@ -571,9 +634,7 @@
     </section>
 
     <script src="js/main.js"></script>
-    <script src="js/filter.js"></script>
-
-    
+   
 
 </body>
 </html>

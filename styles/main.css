@@ -6,19 +6,20 @@ body {
 }
 
 #contacts {
+  padding: 40px; 
   background-color: rgb(231, 231, 231)
 }
 
 #experiences {
-  padding: 50px;
+  padding: 40px;
 }
 
 #skills {
-  padding: 50px;
+  padding: 40px;
   background-image: url("../img/particle-bg.png") ;
   background-attachment: fixed;
 }
 
 #projects {
-  padding: 50px;
+  padding: 40px;
 }
