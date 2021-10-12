@@ -89,12 +89,14 @@ function goToTop() {
 }
 
 function goToAbout() {
+  toggleResponsive()
   $('html, body').animate({
     scrollTop: $("#about").offset().top-offsetTop
 }, timeToScroll);
 }
 
 function goToExperiences() {
+  toggleResponsive()
   $('html, body').animate({
     scrollTop: $("#experiences").offset().top-offsetTop
 
@@ -102,6 +104,7 @@ function goToExperiences() {
 }
 
 function goToSkills() {
+  toggleResponsive()
   $('html, body').animate({
     scrollTop: $("#skills").offset().top-offsetTop
 
@@ -109,12 +112,14 @@ function goToSkills() {
 }
 
 function goToProjects() {
+  toggleResponsive()
   $('html, body').animate({
     scrollTop: $("#projects").offset().top-offsetTop
 }, timeToScroll);
 }
 
 function goToContacts() {
+  toggleResponsive()
   $('html, body').animate({
     scrollTop: $("#contacts").offset().top-offsetTop
 }, timeToScroll);
