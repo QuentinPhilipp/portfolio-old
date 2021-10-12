@@ -165,6 +165,15 @@ display:inline-block;
 
 }
 
+.contact-link {
+    color: #7A7A7A !important;
+    text-decoration: none;
+}
+.contact-link-footer {
+    color: #212529 !important;
+    text-decoration: none;
+}
+
 .topnav .strikeOnHover:before{
 content:'';
 position: absolute;
