@@ -15,9 +15,10 @@ body {
 }
 
 #skills {
-  padding: 40px;
-  background-image: url("../img/particle-bg.png") ;
-  background-attachment: fixed;
+  background: #2B2B2B
+  /* padding: 40px; */
+  /* background-image: url("../img/particle-bg.png") ;
+  background-attachment: fixed; */
 }
 
 #projects {
