@@ -11,7 +11,7 @@ body {
 }
 
 #experiences {
-  padding: 40px;
+  margin-top: 40px;
 }
 
 #skills {
@@ -22,5 +22,9 @@ body {
 }
 
 #projects {
-  margin-top: -40px;
+  padding: -40px;
+}
+
+.downloadButtonTrack {
+  white-space: nowrap;
 }
