@@ -33,7 +33,7 @@
                 <a lang="fr" class="strikeOnHover" onClick="goToProjects()" href="#">Projets</a>
                 <a class="strikeOnHover" onClick="goToContacts()" href="#contacts">Contacts</a>
                 <a class="strikeOnHover" id="switch-lang">FR/EN</a>
-                <a id="go-top" style="color: white; display: none" onClick="goToTop()"><i class="fa fa-arrow-up fa-lg"></i></a>
+                <a id="go-top" style="color: white; display: none; cursor: pointer;" onClick="goToTop()"><i class="fa fa-arrow-up fa-lg"></i></a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -182,14 +182,14 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Magic Tech, Lyon (FR)</span> <span class="badge-line">Internship</span></h4>
-                                <p>Conception and programming of multiple microcontroller to retrieve data from sensors in real-time and control motor/lights/sounds based on the sensors. <br>
-                                I worked with all the steps of product conceptions including CAD, 3D printing, electronic circuit design, soldering, programming, ...</p>
+                                <p>Conception and programming of multiple microcontrollers to retrieve data from sensors in real-time and control motors/lights/sounds based on the sensors. <br>
+                                I worked with all the steps of product conception including CAD, 3D printing, electronic circuit design, soldering, programming, ...</p>
                                 <p class="timeline-subtitle">June 2019 - July 2019</p>
                             </div>
                             <div lang="fr" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Magic Tech, Lyon</span> <span class="badge-line">Stage</span></h4>
-                                <p>Conception et programmation de multiples cartes électroniques chargé de récupérer des données et déclencher des actionneurs.<br>
-                                    J'ai travaillé sur toutes les étapes de la conceptions des produits, CAO, impression 3D, conception électronique, soudure, assemblage et programmation</p>
+                                <p>Conception et programmation de multiples cartes électroniques chargées de récupérer des données et déclencher des actionneurs.<br>
+                                    J'ai travaillé sur toutes les étapes de la conception des produits, CAO, impression 3D, conception électronique, soudure, assemblage et programmation</p>
                                 <p class="timeline-subtitle">Juin 2019 - Juillet 2019</p>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                             </div>
                             <div lang="en" class="timeline-body">
                                 <h4 class="timeline-title"><span class="badge-line">Faculty of Electrical Engineering, University of Ljubjlana (SL)</span> <span class="badge-line">Erasmus</span></h4>
-                                <p">For my last semester at ENIB, I did an Erasmus exchange to discover another country and another university. I studied differents subjects that were not
+                                <p">For my last semester at ENIB, I did an Erasmus exchange to discover another country and another university. I studied different subjects that were not
                                     available at my school.<br>
                                     - Autonomous mobile systems (Robot programming, pathfinding algorithm, object recognition)<br>
                                     - IA (pattern recognition, machine learning, data mining, data science)<br>
@@ -256,7 +256,7 @@
             <h2 lang="en" class="text-center" style="color: white">Skills</h2>
             <h2 lang="fr" class="text-center" style="color: white">Compétences</h2>
             <div class="row mt-5 text-center">
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-circle fa-stack-2x icon-background"></i>
                         <i class="fa fa-desktop fa-stack-1x icon-skill"></i>
@@ -268,7 +268,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-circle fa-stack-2x icon-background"></i>
                         <i class="fa fa-cloud fa-stack-1x icon-skill"></i>
@@ -276,10 +276,11 @@
                     <div class="details">
                         <h3 lang="en" class="skill-label">Web development</h3>
                         <h3 lang="fr" class="skill-label">Développement Web</h3>
-                        <p class="skill-desc">HTML, CSS, JavaScript</p>
+                        <p lang="en" class="skill-desc"><b>Frontend</b> and <b>Backend</b><br>HTML, CSS, JavaScript, Bootstrap<br>Angular, Flask, NodeJS</p>
+                        <p lang="fr" class="skill-desc"><b>Frontend</b> et <b>Backend</b><br>HTML, CSS, JavaScript, Bootstrap<br>Angular, Flask, NodeJS</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-circle fa-stack-2x icon-background"></i>
                         <i class="fa fa-android fa-stack-1x icon-skill"></i>
@@ -287,11 +288,10 @@
                     <div class="details">
                         <h3 lang="en" class="skill-label">Embedded systems</h3>
                         <h3 lang="fr" class="skill-label">Système embarqués</h3>
-                        <p class="skill-desc">ROS, RTOS, C</p>
-                        <p class="skill-desc">CAN, I2C, SPI, UART</p>
+                        <p class="skill-desc">ROS, RTOS, C<br>CAN, I2C, SPI, UART</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-circle fa-stack-2x icon-background"></i>
                         <i class="fa fa-microchip fa-stack-1x icon-skill"></i>
@@ -301,6 +301,30 @@
                         <h3 lang="fr" class="skill-label">Electronique</h3>
                         <p lang="en" class="skill-desc">Prototyping, simulations, designing, testing</p>
                         <p lang="fr" class="skill-desc">Prototypage, simulations, conception, tests</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-clipboard fa-stack-1x icon-skill"></i>
+                    </span>
+                    <div class="details">
+                        <h3 lang="en" class="skill-label">Project management</h3>
+                        <h3 lang="fr" class="skill-label">Gestion de projet</h3>
+                        <p lang="en" class="skill-desc">Version control with <b>git</b> or <b>SVN</b><br>Jira, Confluence</p>
+                        <p lang="fr" class="skill-desc">Gestion de version avec <b>git</b> ou <b>SVN</b><br>Jira, Confluence</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-language fa-stack-1x icon-skill"></i>
+                    </span>
+                    <div class="details">
+                        <h3 lang="en" class="skill-label">Languages</h3>
+                        <h3 lang="fr" class="skill-label">Langues</h3>
+                        <p lang="en" class="skill-desc"><b>French:</b> native<br><b>English:</b> fluent, writing and speaking<br><b>German:</b> basics</p>
+                        <p lang="fr" class="skill-desc"><b>Français :</b> natif<br><b>Anglais :</b> courant, à l'aise à l'écrit et à l'oral<br><b>Allemand :</b> bases</p>
                     </div>
                 </div>
             </div>
@@ -411,11 +435,11 @@
                     <!-- <a><img class="card-img-top" src="img/motor1.jpg" alt=""></a> -->
         
                     <!--Carousel Wrapper-->
-                    <div id="carousel-example-1z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
+                    <div id="carousel-example-2z" class="card-img-top carousel slide carousel-fade" data-ride="carousel">
                     <!--Indicators-->
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-2z" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-2z" data-slide-to="1"></li>
                     </ol>
                     <!--/.Indicators-->
                     <!--Slides-->
@@ -435,11 +459,11 @@
                     </div>
                     <!--/.Slides-->
                     <!--Controls-->
-                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel-example-2z" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-example-2z" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -479,7 +503,7 @@
                     <p lang="en" class="card-text">During our 3rd year at ENIB, I developed with friends a software to generate
                       random bike routes in France. This software uses a path-finding algorithm (A*) to create the best appropriate path.
                        You can choose the distance you want to travel or you can simply define a starting point and a destination
-                       point. This use the OpenStreetMap data. You can check
+                       point. This uses the OpenStreetMap data. You can check
                        the project demo on <a href="https://www.youtube.com/watch?v=seBOBeAjZv8" target="_blank" class="underline">YouTube</a>.</p>                   
                     <p lang="fr" class="card-text">Pendant ma 3ème année à l'ENIB, j'ai développé avec des amis un logiciel pour générer
                       des itinéraires de vélo en France. Ce logiciel utilise un algorithme de recherche de chemin (A*) pour déterminer le chemin le plus approprié.
@@ -532,7 +556,7 @@
                 <a><img class="card-img-top" src="img/projects/spoty.png" alt=""></a>
                 <div class="card-body">
                 <h4 class="card-title">
-                    <a href="">Spoty</a>
+                    <a>Spoty</a>
                 </h4>
                 <h6 class="card-subtitle mb-2 text-muted">Ocean Hackathon Brest 2019</h6>
                 <p lang="en" class="card-text">We made a prototype of a web application for ranking and recommending
@@ -540,7 +564,7 @@
                     available by the companies for the event.</p>                
                 <p lang="fr" class="card-text">Pour un hackathon, nous avons réalisé un prototype pour classer et recommander 
                     les spots de kitesurf et planches à voile en France grâce à des données météorologique et océanographique 
-                    mis à disposition par les partenaires de l'événement. J'ai travaillé sur la récupération des données et le tri des
+                    mises à disposition par les partenaires de l'événement. J'ai travaillé sur la récupération des données et le tri des
                     jeux de données pour les transformer en données exploitables.
                 </p>
                 </div>

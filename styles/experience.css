@@ -78,17 +78,14 @@
 }
  .timeline .timeline-container.primary .badge-line, .timeline .timeline-container.primary .timeline-icon {
 	 background: #f0a202 !important;
-}
- .timeline .timeline-container.info .badge-line, .timeline .timeline-container.info .timeline-icon {
-	 background: #f18805 !important;
+	 color:#212529;
 }
  .timeline .timeline-container.success .badge-line, .timeline .timeline-container.success .timeline-icon {
 	 background: #d95d39 !important;
-}
- .timeline .timeline-container.warning .badge-line, .timeline .timeline-container.warning .timeline-icon {
-	 background: #f18805 !important;
+	 color:#212529;
 }
  .timeline .timeline-container.danger .badge-line, .timeline .timeline-container.danger .timeline-icon {
 	 background: #BD3147 !important;
+	 color: white;
 }
  
