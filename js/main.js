@@ -79,7 +79,7 @@ $(document).ready(function () {
 });
 
 // Scrolling animation
-var offsetTop = 40;
+var offsetTop = 80;
 var timeToScroll = 1200;
 
 function goToTop() {
@@ -91,7 +91,7 @@ function goToTop() {
 function goToAbout() {
   toggleResponsive()
   $('html, body').animate({
-    scrollTop: $("#about").offset().top-offsetTop
+    scrollTop: $("#about").offset().top-40
 }, timeToScroll);
 }
 
