@@ -2,8 +2,9 @@
 
 <h3> 👨🏻‍💻 About Me </h3>
 
-- 🎓 &nbsp; Studying Computer Science and Embedded System at Brest National School of Engineering (ENIB), France.
-- 🤔 &nbsp; Enjoys discovering new technologies and new ways of making software that I like.
+- 👨‍💻 &nbsp; Software engineer for Siemens Digital Industries Software.
+- 🎓 &nbsp; I studied computer science and embedded systems at the Ecole Nationale d'Ingénieur de Brest (ENIB), France.
+- 🤔 &nbsp; Enjoys discovering new technologies and new ways to make useful softwares.
 
 <h3> 🌐 Check my website and the project i'm working on</h3>
 <p>
@@ -31,8 +32,8 @@
   ![GitLab](https://img.shields.io/badge/-GitLab-333333?style=flat&logo=gitlab)
 - 🔧 &nbsp;
   ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC)
+  ![PyCharm](https://img.shields.io/badge/-PyCharm-333333?style=flat&logo=pycharm&logoColor=21D789)
   ![Atom](https://img.shields.io/badge/-Atom-333333?style=flat&logo=atom)
-  ![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=flat&logo=eclipse-ide&logoColor=f1f2ed)
 
 
 
@@ -40,7 +41,7 @@
 
 - 💻 &nbsp;
   ![STM32](https://img.shields.io/badge/STM32-333333?style=flat&logo=stm32)
-  ![RaspberryPi](https://img.shields.io/badge/RaspberryPi-333333?style=flat&logo=raspberry%20pi)
+  ![RaspberryPi](https://img.shields.io/badge/RaspberryPi-333333?style=flat&logo=raspberry%20pi&logoColor=c51a4a)
   ![Arduino](https://img.shields.io/badge/Arduino-333333?style=flat&logo=arduino)
   ![ESP8266](https://img.shields.io/badge/ESP8266-333333?style=flat&logo=esp)
 - 🌐 &nbsp;
@@ -59,5 +60,5 @@
 
 <p>
 <a href="https://linkedin.com/in/QuentinPhilipp/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Quentin%20Philipp%20-blue?style=flat-square&logo=linkedin"></a>
-<a href="mailto:quentin.philipp@hotmail.fr"><img alt="Email" src="https://img.shields.io/badge/Email-quentin.philipp@hotmail.fr-blue?style=flat-square&logo=gmail"></a>
+<a href="mailto:quentin.philipp@outlook.fr"><img alt="Email" src="https://img.shields.io/badge/Email-quentin.philipp@hotmail.fr-blue?style=flat-square&logo=gmail"></a>
 </p>
