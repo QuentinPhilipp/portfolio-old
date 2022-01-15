@@ -1,15 +1,15 @@
-$('[lang="en"]').hide();
-filterSelection("all") 
-
-
 // Language filter
+$('document').ready(function(){
+  $('[lang="en"]').hide();
+  filterSelection("all") 
 
-$('#switch-lang').click(function() {
-  $('[lang="fr"]').toggle();
-  $('[lang="en"]').toggle();
-  $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
+  
+  $('#switch-lang').click(function() {
+    $('[lang="fr"]').toggle();
+    $('[lang="en"]').toggle();
+    $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
+  });
 });
-
 
 // Toggle responsive for navbar
 function toggleResponsive() {
